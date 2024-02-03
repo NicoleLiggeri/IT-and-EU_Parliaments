@@ -48,15 +48,7 @@
 
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
-  <script type="text/javascript"
-    src="assets/js/plotly_graphs/bubble-charts/bubble-chart-17-edu-preg (1)/plotlyjs-bundle.js"></script>
-  <script type="text/javascript"
-    src="assets/js/plotly_graphs/bubble-charts/bubble-chart-17-edu-preg (1)/figure.js"></script>
-
-
-
   <!-- Leaflet -->
-
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
   <!-- Make sure you put this AFTER Leaflet's CSS -->
@@ -83,9 +75,7 @@
     <div class="container d-flex align-items-center justify-content-center">
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#results">Results</a></li>
           <li><a class="nav-link scrollto" href="#datasets">Datasets</a></li>
           <li class="dropdown"><a href=""><span>Documentation</span><i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -94,8 +84,7 @@
               <li><a class="nav-link scrollto" href="#sustain">Sustainability</a></li>
             </ul>
           </li>
-          <li><a class="nav-link scrollto" href="#team">Team</a></li>
-          <li><a class="nav-link scrollto" href="#license">License</a></li>
+          <li><a class="nav-link scrollto" href="#license">References</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -238,14 +227,6 @@
               </p>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-              <div class="icon"><i class="bi bi-patch-check"></i></div>
-              <h4 class="title"><a>Quality analysis</a></h4>
-              <p class="description">Following the National Guidelines for the Improvement of Public Information Assets
-                          and its four factors: accuracy, completeness, coherence and promptness.</p>
-            </div>
-          </div>
           <div class="col-lg-3 col-md-4 portfolio-item source-dataset">
             <div class="icon-box">
               <div class="dataset-title">
@@ -261,7 +242,46 @@
               </p>
             </div>
           </div>
-        </div>
+          </div>
+
+          <div class="row content">
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
+              <p>we then produced new mashup datasets</p>
+            </div>
+          </div>
+          <div class="row portfolio-container d-flex flex-row justify-content-center" data-aos="fade-up" data-aos-delay="300">
+            <div class="col-lg-3 col-md-4 portfolio-item source-dataset">
+              <div class="icon-box">
+                <div class="dataset-title">
+                  <i class="bi bi-file-earmark"></i>
+                  <h3>Mashup 1</h3>
+                </div>
+                <p>
+                  <b>Source</b>: <a href="http://dati.camera.it/sparql" target="_blank">SPARQL endpoint</a><br>
+                  <b>Format</b>: .rdf<br>
+                  <b>Metadata</b>: <br>
+                  <b>URI</b>: <br>
+                  <b>License</b>: CC BY 4.0<br>
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 portfolio-item source-dataset">
+              <div class="icon-box">
+                <div class="dataset-title">
+                  <i class="bi bi-file-earmark"></i>
+                  <h3>Mashup 2</h3>
+                </div>
+                <p>
+                  <b>Source</b>: <a href="http://dati.senato.it/sparql" target="_blank">SPARQL endpoint</a><br>
+                  <b>Format</b>: .rdf<br>
+                  <b>Metadata</b>: <br>
+                  <b>URI</b>: <br>
+                  <b>License</b>: CC BY 3.0<br>
+                </p>
+              </div>
+            </div>
+          </div>
+          
       </div>
     </section><!-- End Datasets Section -->
 
@@ -274,60 +294,8 @@
           <p>The 7 source datasets have been analysed for four aspects.</p>
         </div>
 
-        <div class="row">
-          <!-- === Quality Analysis === -->
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" type="button" data-bs-toggle="collapse"
-            data-bs-target="#target1" aria-expanded="false">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-              <div class="icon"><i class="bi bi-patch-check"></i></div>
-              <h4 class="title"><a>Quality analysis</a></h4>
-              <p class="description">Following the National Guidelines for the Improvement of Public Information Assets
-                and its four factors: accuracy, completeness, coherence and promptness.</p>
-            </div>
-          </div>
-
-          <!-- === Legal Analysis === -->
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" type="button" data-bs-toggle="collapse"
-            data-bs-target="#target2" aria-expanded="false">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
-              <div class="icon"><i class="bi bi-shield-shaded"></i></div>
-              <h4 class="title"><a href="">Legal Analysis</a></h4>
-              <p class="description">To assess possible imbalances and risks regarding the long-term viability of the
-                data generation and dissemination regarding the topics of: privacy, intellectual property, release
-                license, limitation on public access, economical conditions, and other temporary aspects.</p>
-            </div>
-          </div>
-
-          <!-- === Ethical Analysis === -->
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" type="button" data-bs-toggle="collapse"
-            data-bs-target="#target3" aria-expanded="false">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
-              <div class="icon"><i class="bi bi-universal-access"></i></div>
-              <h4 class="title"><a href="">Ethical Analysis</a></h4>
-              <p class="description">Evaluating the ethical aspects of the datasets using the Data
-                Ethics Principles and Guidelines: human being at the centre, transparency, accountability, and
-                individual data protection.
-              </p>
-            </div>
-          </div>
-
-          <!-- === Technical Analysis === -->
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" type="button" data-bs-toggle="collapse"
-            data-bs-target="#target4" aria-expanded="false">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
-              <div class="icon"><i class="bi bi-wrench"></i></div>
-              <h4 class="title"><a href="">Technical Analysis</a></h4>
-              <p class="description">On the metadata provided by Istat and other possible information on the datasets:
-                format, provenance, IRI. Moreover, an RDF assertion and metadata for the mashup datasets and an analysis
-                of the project from the perspective of the FAIR principles.</p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
       <!-- Quality box -->
-      <div class="container collapse analysis-card" id="target1" data-bs-parent="#analyses">
+      <div class="container analysis-card" id="target1" data-aos="fade">
         <div class="align-items-stretch mb-5 mb-lg-0">
           <div class="analysis-box">
             <div class="analysis-box-title">
@@ -428,7 +396,7 @@
       </div>
 
       <!-- Legal box -->
-      <div class="container collapse analysis-card" id="target2" data-bs-parent="#analyses">
+      <div class="container analysis-card" id="target2" data-aos="fade">
         <div class="align-items-stretch mb-5 mb-lg-0">
           <div class="analysis-box">
             <div class="analysis-box-title">
@@ -1086,7 +1054,7 @@
       </div>
 
       <!-- Ethical box -->
-      <div class="container collapse analysis-card" id="target3" data-bs-parent="#analyses">
+      <div class="container analysis-card" id="target3" data-aos="fade">
         <div class="align-items-stretch mb-5 mb-lg-0">
           <div class="analysis-box">
             <div class="analysis-box-title">
@@ -1094,7 +1062,6 @@
               <h2 class="analysis-title">Ethical analysis</h2>
             </div>
             <br>
-            <img src='assets/img/ethics-icon.jpg' class="float-left" id="ethics" />
             <br>
             <br>
             <p style='padding: 0 4em 2em 2em;' class="analysis-text">
@@ -1229,7 +1196,7 @@
       </div>
 
       <!-- Technical box -->
-      <div class="container collapse analysis-card" id="target4" data-bs-parent="#analyses">
+      <div class="container analysis-card" id="target4" data-aos="fade">
         <div class="align-items-stretch mb-5 mb-lg-0">
           <div class="analysis-box">
             <div class="analysis-box-title">
@@ -2443,30 +2410,6 @@ All rights reserved. (<a href= "https://github.com/Leaflet/Leaflet/blob/main/LIC
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
-  <!-- Leaflet maps -->
-  <script src="assets/js/maps/loadingmap.js"></script>
-  <script src="assets/js/maps/loadingmap_18.js"></script>
-  <script src="assets/js/maps/loadingmap_19.js"></script>
-
-
-  <script src="assets/js/italy_regions.js"></script>
-<!-- bar graphs -->
-  <script src="assets/js/plotly_graphs/bar-charts/bar-percentage-17.js"></script>
-  <script src="assets/js/plotly_graphs/bar-charts/bar-percentage-18.js"></script>
-  <script src="assets/js/plotly_graphs/bar-charts/bar-percentage-19.js"></script>
-
-<!-- time-series -->
-  <script src="assets/js/plotly_graphs/time-series/time-series-general.js"></script>
-<!-- pie-charts -->
-  <script src="assets/js/pie_charts/pie-total.js"></script>
-  <!-- bubble charts -->
-
-  <script src="assets/js/plotly_graphs/bubble-charts/bubble-chart-17-edu-preg (1)/plotlyjs-bundle.js"></script>
-  <script type="text/javascript"
-    src="assets/js/plotly_graphs/bubble-charts/bubble-chart-17-edu-preg (1)/figure.js"></script>
-
-
 </body>
 
 </html>
