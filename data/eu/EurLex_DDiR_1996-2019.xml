@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:dcat="http://www.w3.org/ns/dcat#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:prov="http://www.w3.org/ns/prov#"
+    xmlns:adms="http://www.w3.org/ns/adms#"
+    xmlns:dqv="http://www.w3.org/ns/dqv#"
+    xmlns:qb="http://purl.org/linked-data/cube#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+    xmlns:org="http://www.w3.org/ns/org#"
+    xmlns:time="http://www.w3.org/2006/time#"
+    xmlns:ma="http://www.w3.org/ns/ma-ont#"
+    xmlns:doap="http://usefulinc.com/ns/doap#"
+    xmlns:schema="http://schema.org/">
+
+    <!-- Dataset -->
+    <dcat:Dataset rdf:about="http://example.com/dataset">
+        <dcat:title xml:lang="en">European Legal Texts</dcat:title>
+        <dcat:description xml:lang="en">Collection of European legal texts from 1996 to 2019.</dcat:description>
+        <dcat:keyword xml:lang="en">European Union</dcat:keyword>
+        <dcat:keyword xml:lang="en">Legal Texts</dcat:keyword>
+        <dcat:landingPage rdf:resource="http://example.com/dataset"/>
+        <!-- Publisher -->
+        <dcat:publisher>
+            <foaf:Agent>
+                <foaf:name>European Union</foaf:name>
+            </foaf:Agent>
+        </dcat:publisher>
+        <!-- Distribution -->
+        <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:title xml:lang="en">EurLex Legal Texts Dataset</dcat:title>
+                <dcat:downloadURL rdf:resource="http://example.com/eu/EurLex_DDiR_1996-2019.json"/>
+                <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/json"/>
+            </dcat:Distribution>
+        </dcat:distribution>
+        <!-- Additional Distributions (if applicable) -->
+        <!-- <dcat:distribution>
+            <dcat:Distribution>
+                <dcat:title xml:lang="en">EurLex Leg13 Dataset</dcat:title>
+                <dcat:downloadURL rdf:resource="http://example.com/eu/EurLex_Leg13.json"/>
+                <dcat:mediaType rdf:resource="http://www.iana.org/assignments/media-types/application/json"/>
+            </dcat:Distribution>
+        </dcat:distribution> -->
+        <!-- Repeat the distribution block for each additional dataset -->
+        <!-- Add more distributions as necessary -->
+    </dcat:Dataset>
+</rdf:RDF>
