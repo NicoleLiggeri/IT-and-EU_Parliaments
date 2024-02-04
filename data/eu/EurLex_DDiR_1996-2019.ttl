@@ -44,15 +44,19 @@
 
     dcat:landingPage <https://nicoleliggeri.github.io/IT-and-EU_Parliaments/> ;
 
-    dcat:startDate "1996"^^xsd:gYear ;
-    dcat:endDate "2019"^^xsd:gYear ;
+    dct:temporal [
+        a dct:PeriodOfTime ;
+        dcat:startDate "1996"^^xsd:gYear ;
+        dcat:endDate "2019"^^xsd:gYear ;
+    ] ;
 
-    dcat:distribution <dataset/pathologies.json> ;
+    dcat:distribution <https://github.com/NicoleLiggeri/IT-and-EU_Parliaments/blob/main/data/eu/EurLex_DDiR_1996-2019.zip> ;
 
     dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcat:mediaType <http://www.iana.org/assignments/media-types/text/json> ;
+    dcat:accessURL <https://github.com/NicoleLiggeri/IT-and-EU_Parliaments/raw/main/data/eu/EurLex_DDiR_1996-2019.zip> ;
     dcat:downloadURL <https://github.com/NicoleLiggeri/IT-and-EU_Parliaments/raw/main/data/eu/EurLex_DDiR_1996-2019.zip> ;
-    dcat:byteSize "69.5 MB" ;
+    dcat:byteSize "69517690"^^xsd:decimal ;
 
     adms:status <http://purl.org/adms/status/Completed> ;
     dct:license <https://creativecommons.org/licenses/by/4.0/> .
@@ -80,14 +84,17 @@
 
     dcat:landingPage <https://nicoleliggeri.github.io/IT-and-EU_Parliaments/> ;
 
-    dcat:startDate "1996-05-09"^^xsd:date ;
-    dcat:endDate "2001-05-29"^^xsd:date ;
+    dct:temporal [
+        a dct:PeriodOfTime ;
+        dcat:startDate "1996-05-09"^^xsd:date ;
+        dcat:endDate "2001-05-29"^^xsd:date ;
+    ] ;
     dcat:distribution <https://github.com/NicoleLiggeri/IT-and-EU_Parliaments/blob/main/data/eu/EurLex_DDiR_1996-2019.zip> ;
 
     dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcat:mediaType <http://www.iana.org/assignments/media-types/text/json> ;
-    dcat:downloadURL <https://github.com/NicoleLiggeri/IT-and-EU_Parliaments/raw/main/data/eu/EurLex_DDiR_1996-2019.zip> ;
-    dcat:byteSize "20.2 MB" ;
+    dcat:accessURL <https://github.com/NicoleLiggeri/IT-and-EU_Parliaments/raw/main/data/eu/EurLex_DDiR_1996-2019.zip> ;
+    dcat:byteSize "20194760"^^xsd:decimal ;
 
     adms:status <http://purl.org/adms/status/Completed> ;
     dct:license <https://creativecommons.org/licenses/by/4.0/> .
@@ -115,14 +122,18 @@
 
     dcat:landingPage <https://nicoleliggeri.github.io/IT-and-EU_Parliaments/> ;
 
-    dcat:startDate "2001-05-30"^^xsd:date ;
-    dcat:endDate "2006-04-27"^^xsd:date ;
+    dct:temporal [
+        a dct:PeriodOfTime ;
+        dcat:startDate "2001-05-30"^^xsd:date ;
+        dcat:endDate "2006-04-27"^^xsd:date ;
+    ] ;
+
     dcat:distribution <https://github.com/NicoleLiggeri/IT-and-EU_Parliaments/blob/main/data/eu/EurLex_DDiR_1996-2019.zip> ;
 
     dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcat:mediaType <http://www.iana.org/assignments/media-types/text/json> ;
-    dcat:downloadURL <https://github.com/NicoleLiggeri/IT-and-EU_Parliaments/raw/main/data/eu/EurLex_DDiR_1996-2019.zip> ;
-    dcat:byteSize "17.3 MB" ;
+    dcat:accessURL <https://github.com/NicoleLiggeri/IT-and-EU_Parliaments/raw/main/data/eu/EurLex_DDiR_1996-2019.zip> ;
+    dcat:byteSize "17259280"^^xsd:decimal ;
 
     adms:status <http://purl.org/adms/status/Completed> ;
     dct:license <https://creativecommons.org/licenses/by/4.0/> .
@@ -150,14 +161,18 @@
 
     dcat:landingPage <https://nicoleliggeri.github.io/IT-and-EU_Parliaments/> ;
 
-    dcat:startDate "2006-04-28"^^xsd:date ;
-    dcat:endDate "2008-04-28"^^xsd:date ;
+    dct:temporal [
+        a dct:PeriodOfTime ;
+        dcat:startDate "2006-04-28"^^xsd:date ;
+        dcat:endDate "2008-04-28"^^xsd:date ;
+    ] ;
+
     dcat:distribution <https://github.com/NicoleLiggeri/IT-and-EU_Parliaments/blob/main/data/eu/EurLex_DDiR_1996-2019.zip> ;
 
     dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcat:mediaType <http://www.iana.org/assignments/media-types/text/json> ;
-    dcat:downloadURL <https://github.com/NicoleLiggeri/IT-and-EU_Parliaments/raw/main/data/eu/EurLex_DDiR_1996-2019.zip> ;
-    dcat:byteSize "5.3 MB" ;
+    dcat:accessURL <https://github.com/NicoleLiggeri/IT-and-EU_Parliaments/raw/main/data/eu/EurLex_DDiR_1996-2019.zip> ;
+    dcat:byteSize "5302076"^^xsd:decimal ;
 
     adms:status <http://purl.org/adms/status/Completed> ;
     dct:license <https://creativecommons.org/licenses/by/4.0/> .
@@ -185,14 +200,18 @@
 
     dcat:landingPage <https://nicoleliggeri.github.io/IT-and-EU_Parliaments/> ;
 
-    dcat:startDate "2008-04-29"^^xsd:date ;
-    dcat:endDate "2013-03-14"^^xsd:date ;
+    dct:temporal [
+        a dct:PeriodOfTime ;
+        dcat:startDate "2008-04-29"^^xsd:date ;
+        dcat:endDate "2013-03-14"^^xsd:date ;
+    ] ;
+
     dcat:distribution <https://github.com/NicoleLiggeri/IT-and-EU_Parliaments/blob/main/data/eu/EurLex_DDiR_1996-2019.zip> ;
 
     dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcat:mediaType <http://www.iana.org/assignments/media-types/text/json> ;
-    dcat:downloadURL <https://github.com/NicoleLiggeri/IT-and-EU_Parliaments/raw/main/data/eu/EurLex_DDiR_1996-2019.zip> ;
-    dcat:byteSize "11.2 MB" ;
+    dcat:accessURL <https://github.com/NicoleLiggeri/IT-and-EU_Parliaments/raw/main/data/eu/EurLex_DDiR_1996-2019.zip> ;
+    dcat:byteSize "11158096"^^xsd:decimal ;
 
     adms:status <http://purl.org/adms/status/Completed> ;
     dct:license <https://creativecommons.org/licenses/by/4.0/> .
@@ -219,14 +238,19 @@
 
     dcat:landingPage <https://nicoleliggeri.github.io/IT-and-EU_Parliaments/> ;
 
-    dcat:startDate "2013-03-15"^^xsd:date ;
-    dcat:endDate "2018-03-22"^^xsd:date ;
+
+    dct:temporal [
+        a dct:PeriodOfTime ;
+        dcat:startDate "2013-03-15"^^xsd:date ;
+        dcat:endDate "2018-03-22"^^xsd:date ;
+    ] ;
+
     dcat:distribution <https://github.com/NicoleLiggeri/IT-and-EU_Parliaments/blob/main/data/eu/EurLex_DDiR_1996-2019.zip> ;
 
     dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcat:mediaType <http://www.iana.org/assignments/media-types/text/json> ;
-    dcat:downloadURL <https://github.com/NicoleLiggeri/IT-and-EU_Parliaments/raw/main/data/eu/EurLex_DDiR_1996-2019.zip> ;
-    dcat:byteSize "11.8 MB" ;
+    dcat:accessURL <https://github.com/NicoleLiggeri/IT-and-EU_Parliaments/raw/main/data/eu/EurLex_DDiR_1996-2019.zip> ;
+    dcat:byteSize "11755904"^^xsd:decimal ;
 
     adms:status <http://purl.org/adms/status/Completed> ;
     dct:license <https://creativecommons.org/licenses/by/4.0/> .
@@ -254,21 +278,25 @@
 
     dcat:landingPage <https://nicoleliggeri.github.io/IT-and-EU_Parliaments/> ;
 
-    dcat:startDate "2018-03-23"^^xsd:date ;
-    dcat:endDate "2019-10-12"^^xsd:date ;
+    dct:temporal [
+        a dct:PeriodOfTime ;
+        dcat:startDate "2018-03-23"^^xsd:date ;
+        dcat:endDate "2019-10-12"^^xsd:date ;
+    ] ;
+
     dcat:distribution <https://github.com/NicoleLiggeri/IT-and-EU_Parliaments/blob/main/data/eu/EurLex_DDiR_1996-2019.zip> ;
 
     dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcat:mediaType <http://www.iana.org/assignments/media-types/text/json> ;
-    dcat:downloadURL <https://github.com/NicoleLiggeri/IT-and-EU_Parliaments/raw/main/data/eu/EurLex_DDiR_1996-2019.zip> ;
-    dcat:byteSize "2.6 MB" ;
+    dcat:accessURL <https://github.com/NicoleLiggeri/IT-and-EU_Parliaments/raw/main/data/eu/EurLex_DDiR_1996-2019.zip> ;
+    dcat:byteSize "2563513"^^xsd:decimal ;
 
     adms:status <http://purl.org/adms/status/Completed> ;
     dct:license <https://creativecommons.org/licenses/by/4.0/> .
 
 
 <https://github.com/NicoleLiggeri/IT-and-EU_Parliaments/blob/main/data/eu/EurLex_DDiR_1996-2019.zip> a dcat:Distribution ;
-    dcat:downloadURL <https://github.com/NicoleLiggeri/IT-and-EU_Parliaments/blob/main/data/eu/EurLex_DDiR_1996-2019.zip> ;
+    dcat:accessURL <https://github.com/NicoleLiggeri/IT-and-EU_Parliaments/blob/main/data/eu/EurLex_DDiR_1996-2019.zip> ;
     dct:license <https://creativecommons.org/licenses/by/4.0/> .
     dcat:mediaType <http://www.iana.org/assignments/media-types/text/json> ;
     dcat:compressFormat <http://www.iana.org/assignments/media-types/application/gzip> .
