@@ -119,30 +119,19 @@
           <h2>Introduction & Scenario</h2>
         </div>
 
-        <div class="row content d-flex justify-content-center">
-          <div class="col-lg-6 text-center" data-aos="fade-up" data-aos-delay="150">
-            <p>The project was developed for the Open Access and Digital Ethics course of the Digital Humanities and Digital Knowledge master's degree at the University of Bologna, by:</p>
+        <div class="column content d-flex flex-column justify-content-center align-items-center" >
+          <div class="col-lg-10" data-aos="fade-up" data-aos-delay="150">
+            <p>The objective of the project is to work with <span class="underlined--bg underlined--offset--bg active--bg"><b>Open Government Data</b></span>, for the creation of a new, clean, and enriched collection.</p> 
+            <p>This classification system, endorsed by prominent figures in the digital world such as Tim Berners-Lee, is based on the concept of the Semantic Web and calls for the production and re-use of:</p>
             <ul>
-              <li>Nicole Liggeri</li>
-              <li>Leonardo Zilli</li>
-            </ul>
-            <p>The objective of the project is to work with Open Government Data, for the creation of a new, clean, and enriched collection. This classification system, proposed by Tim Berners-Lee, is based on the concept of the Semantic Web and includes:</p>
-            <ul>
-              <li>data available on the web with an open license;</li>
-              <li>data in a structured format for easy interpretation by software;</li>
-              <li>data in a non-proprietary format;</li>
-              <li>use of open standards defined by the W3C, such as RDF, for object identification;</li>
+              <li>data available on the web with an open license</li>
+              <li>data in a structured format for easy interpretation by software</li>
+              <li>data in a non-proprietary format</li>
+              <li>use of open standards defined by the W3C, such as RDF, for object identification</li>
               <li>presence of links to other data (Linked Open Data).</li>  
             </ul>
-            <p>The result of our work is the processing of datasets from the Italian Parliament and the European Parliament, and the creation of new information that can be interactively viewed on the project's website. This resource contains:</p>
-            <ul>
-              <li>project documentation;</li>
-              <li>ethical-legal and technical analysis of the datasets used as a source;</li>
-              <li>new datasets from the comparison between the previous ones;</li>
-              <li>the RDF model, in accordance with ontologies shared by the reference community;</li>
-              <li>a data visualization accessible also to users.</p></li>
-            </ul>
-          </div>
+            <p>The result of our work is the creation of <span class="underlined--bg underlined--offset--bg active--bg"><b>new datasets</b></span>, which describe the legislative efforts of both the Italian Parliament and the European Parliament, and the creation of new information that can be interactively viewed on the project's website. </p>
+           </div>
         </div>
 
       </div>
@@ -156,8 +145,8 @@
           <h2>Datasets</h2>
         </div>
 
-        <div class="column content">
-          <div class="text-left" data-aos="fade-up" data-aos-delay="150">
+        <div class="column content d-flex flex-column justify-content-center align-items-center" >
+          <div class="col-lg-10" data-aos="fade-up" data-aos-delay="150">
             <p>For the implementation of these visualizations, we used datasets from the Chamber of Deputies (Camera) and the Senate separately, as well as integrated datasets. This approach allowed us to verify, through mutual comparison, the data coming from both branches of Parliament during the course of the work.</p>
             <p>We primarily used SPARQL queries by querying the respective endpoints:
             <p>We then exported the datasets and used JavaScript with JSON and Python with CSV to refine the necessary data to obtain the respective visualizations.</p>
@@ -216,8 +205,8 @@
             </div>
           </div>
 
-          <div class="row content">
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
+        <div class="column content d-flex flex-column justify-content-center align-items-center" >
+            <div class="col-lg-10" data-aos="fade-up" data-aos-delay="150">
               <p>we then produced new mashup datasets</p>
             </div>
           </div>
@@ -345,8 +334,8 @@
             <div class="accordion" id="accordionExample">
               <div class="accordion-item">
                 <h2 class="accordion-header" id="headingOne">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                    aria-expanded="true" aria-controls="collapseOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="false" aria-controls="collapseOne">
                     Privacy Issues
                   </button>
                 </h2>
@@ -830,7 +819,6 @@
               Institute of Statistics, we initially focused on analysing the <b>fairness of data collection and management</b>
               by ISTAT, and then established <b>guidelines</b> for addressing ethical concerns when processing the source
               datasets for our project.
-
             </p>
             <br>
             <br>
@@ -1824,7 +1812,7 @@
             <div class="accordion" id="accordionexample">
               <div class="accordion-item">
                 <h2 class="accordion-header" id="headingOne">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapseOne-FAIR" aria-expanded="true" aria-controls="collapseOne-FAIR">
                     Findability
                   </button>
@@ -1835,8 +1823,11 @@
                     <table class="table table-hover align-middle">
                       <thead class="table-light">
                         <tr>
-                          <th scope="col">To check:</th>
                           <th scope="col"></th>
+                          <th scope="col">D1</th>
+                          <th scope="col">D2</th>
+                          <th scope="col">CEPS EurLex dataset V2</th>
+                          <th scope="col">EurLex_DDiR_1996-2019</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -1844,20 +1835,32 @@
                           <th scope="row">(Meta)data are assigned a globally unique and persistent identifier
                           </th>
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                         </tr>
                         <tr>
-                          <th scope="row">Data are described with rich metadata (defined by R1 below)
+                          <th scope="row">Data are described with rich metadata
                           </th>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                         </tr>
                         <tr>
                           <th scope="row">Metadata clearly and explicitly include the identifier of the data they
                             describe</th>
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                         </tr>
                         <tr>
                           <th scope="row">(Meta)data are registered or indexed in a searchable resource
                           </th>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                         </tr>
                       </tbody>
@@ -1878,8 +1881,11 @@
                     <table class="table table-hover align-middle">
                       <thead class="table-light">
                         <tr>
-                          <th scope="col">To check:</th>
                           <th scope="col"></th>
+                          <th scope="col">D1</th>
+                          <th scope="col">D2</th>
+                          <th scope="col">CEPS EurLex dataset V2</th>
+                          <th scope="col">EurLex_DDiR_1996-2019</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -1887,19 +1893,31 @@
                           <th scope="row">(Meta)data are retrievable by their identifier using a standardised
                             communications protocol</th>
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-x" style="color: #3c5950; font-size: 24px;"></i></td>
                         </tr>
                         <tr>
                           <th scope="row">The communication protocol is open, free, and universally implementable</th>
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-x" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-x" style="color: #3c5950; font-size: 24px;"></i></td>
                         </tr>
                         <tr>
                           <th scope="row">The communication protocol allows for an authentication and authorisation
                             procedure, where necessary</th>
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                         </tr>
                         <tr>
                           <th scope="row">Metadata are accessible, even when the data are no longer available</th>
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-x" style="color: #3c5950; font-size: 24px;"></i></td>
                         </tr>
                       </tbody>
                     </table>
@@ -1919,8 +1937,11 @@
                     <table class="table table-hover align-middle">
                       <thead class="table-light">
                         <tr>
-                          <th scope="col">To check:</th>
                           <th scope="col"></th>
+                          <th scope="col">D1</th>
+                          <th scope="col">D2</th>
+                          <th scope="col">CEPS EurLex dataset V2</th>
+                          <th scope="col">EurLex_DDiR_1996-2019</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -1928,13 +1949,22 @@
                           <th scope="row">(Meta)data use a formal, accessible, shared, and broadly applicable language
                             for knowledge representation.</th>
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                         </tr>
                         <tr>
                           <th scope="row">(Meta)data use vocabularies that follow FAIR principles</th>
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                         </tr>
                         <tr>
                           <th scope="row">(Meta)data include qualified references to other (meta)data</th>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-x" style="color: #3c5950; font-size: 24px;"></i></td>
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                         </tr>
                       </tbody>
@@ -1955,8 +1985,11 @@
                     <table class="table table-hover align-middle">
                       <thead class="table-light">
                         <tr>
-                          <th scope="col">To check:</th>
                           <th scope="col"></th>
+                          <th scope="col">D1</th>
+                          <th scope="col">D2</th>
+                          <th scope="col">CEPS EurLex dataset V2</th>
+                          <th scope="col">EurLex_DDiR_1996-2019</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -1999,15 +2032,16 @@
         <div class="section-title" data-aos="fade-up">
           <h2>Sustainability of the datasets</h2>
         </div>
-        <div class="row content">
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
+        <div class="column content d-flex flex-column justify-content-center align-items-center" >
+          <div class="col-lg-10" data-aos="fade-up" data-aos-delay="150">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique velit quidem quod esse rerum eos? Eligendi error, hic, pariatur, deserunt sapiente sunt consectetur consequatur impedit quibusdam ducimus ad unde totam!
+              The datasets produced in the context of this project have been created from a variety of sources, including both traditional structured datasets and more "dynamic" datasets such as the SPARQL endpoints of Camera and Senato. The latters are particularly interesting as they allow for the creation of "live" datasets, which are always up-to-date with the latest data available on the respective websites. This is the case for both the datasets related to the Italian Parliament, as well as the EurLex dataset as they are constantly updated with new data.
             </p>
           </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+          <br>
+          <div class="col-lg-10" data-aos="fade-up" data-aos-delay="300">
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem illum tempore libero vel a quae, sapiente dolor quos obcaecati. Debitis, earum maiores impedit perferendis aspernatur odio tempora vero qui in.
+              For the sake of this project, we have chosen to create static datasets, but the nature of the original sources allows without too much effort for the creation of "live" datasets that get updated each time the sources receive new data via simple SPARQL queries. This is a very important aspect of the sustainability of the datasets, as it allows for the creation of datasets that are always up-to-date with the latest data available on the respective websites.
             </p>
           </div>
         </div>
