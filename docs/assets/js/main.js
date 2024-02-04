@@ -294,9 +294,6 @@ function revealBG_gray(delay) {
 }
 
 /* --- Highcharts --- */
-
-
-
 function toggleVisualization(containerId, series) {
   fetch(`./assets/data/eu/KW_${containerId}.json`)
     .then((response) => response.json())
