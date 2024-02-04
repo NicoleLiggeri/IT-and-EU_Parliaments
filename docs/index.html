@@ -310,28 +310,13 @@
               <h2 class="analysis-title">Quality analysis</h2>
             </div>
             <p class="analysis-text">
-              Following the Italian <a
-                href="https://docs.italia.it/italia/daf/lg-patrimonio-pubblico/it/stabile/aspettiorg.html#qualita-dei-dati"
-                target="_blank"><b>National
-                  Guidelines</b></a> ("Linee guida nazionali per la valorizzazione del patrimonio informativo
-              pubblico"), developed in the context of the Data & Analytics
-              Framework project by AgID and the Digital Transformation Team, we have performed a quality analysis of our
-              source datasets to ensure their <span class="underlined--bg underlined--offset--bg"><b>good
-                  condition</b></span> and their <span
-                class="underlined--bg underlined--offset--bg"><b>suitability</b></span> for the intended use.<br>
-              Specifically, there are four main factors to look for when analysing data quality:
+              The datasets have been analyzed through the lenses of four main factors, described below, to detect possible flaws in the quality of the data.
             <ul class="list-group list-group-flush">
-              <li class="list-group-item"><b>Accuracy (syntactic and semantic)</b>: the data and its attributes
-                correctly represent the real value of the concept or event they refer to</li>
-              <li class="list-group-item"><b>Coherence</b>: the data and its attributes do not present any
-                contradictions with respect to other data in the context of use by the administration owner</li>
-              <li class="list-group-item"><b>Completeness</b>: the data are exhaustive for what concerns every expected
-                value and with respect to the related entities (sources) that contribute to the definition of the
-                procedure</li>
-              <li class="list-group-item"><b>Timeliness (or promptness of updating)</b>: the data and its attributes
-                refer to the "correct time" (up to date) with respect to the procedure they refer to</li>
+              <li class="list-group-item"><b>Accuracy</b>: The degree to which the data faithfully represent the true information they intend to convey, ensuring reliability in analysis and decision-making processes.</li>
+              <li class="list-group-item"><b>Coherence</b>: The uniformity and logical consistency of data across the dataset, ensuring that all information aligns with established standards and rules.</li>
+              <li class="list-group-item"><b>Completeness</b>: The extent to which all required data elements are present and accounted for within the dataset, minimizing the risk of bias and ensuring comprehensive analysis.</li>
+              <li class="list-group-item"><b>Timeliness (or promptness of updating)</b>: The currency or recency of the data relative to the analysis or decision-making context, ensuring that insights are based on up-to-date information and reflect current realities.</li>
             </ul>
-            The following table showcases the quality of each of the source datasets and highlights possible flaws.
             </p>
             <!-- Table for quality analysis -->
             <div class="table-responsive">
@@ -364,14 +349,14 @@
                     <th scope="row">CEPS EurLex dataset V2</th>
                     <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                     <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                    <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                    <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                    <td><i class="bi bi-x" style="color: #3c5950; font-size: 24px;"></i></td>
+                    <td><i class="bi bi-x" style="color: #3c5950; font-size: 24px;"></i></td>
                   </tr>
                     <th scope="row">EurLex_DDiR_1996-2019</th>
                     <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                     <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                     <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
-                    <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                    <td><i class="bi bi-x" style="color: #3c5950; font-size: 24px;"></i></td>
                   </tr>
                 </tbody>
               </table>
@@ -388,17 +373,9 @@
               <i class="bi bi-shield-shaded"></i>
               <h2 class="analysis-title">Legal analysis</h2>
             </div>
-            <p class="analysis-text">
-              The legal analysis of the source datasets is fundamental to obtain <span
-                class="underlined--bg underlined--offset--bg"><b>sustainability over time</b></span> of the production
-              process and of the publication of datasets and to guarantee a <span
-                class="underlined--bg underlined--offset--bg"><b>balanced service</b></span> in compliance with the
-              public function and with individual rights.
-            </p>
-            <p class="analysis-text">
-              This analysis was carried out using a reference checklist consisting of a series of binary questions
-              regarding the topics of: <b>privacy issues</b>, <b>IPR policy</b>, <b>licenses</b>, <b>limitations on
-                public access</b>, <b>economical conditions</b>, and <b>temporal aspects</b>.
+            < class="analysis-text">
+              The legal analysis of the source datasets has been undertaken by following the checklist for the Public Administration for the Open Data release, an instrument that help verify the legal aspects connected to the release of an Open Dataset in relation to a different range of topics among which: <b>privacy issues</b>, <b>IPR policy</b>, <b>licenses</b>, <b>limitations on
+                public access</b>, <b>economical conditions</b>, and <b>temporal aspects</b> of the datasets.
             </p>
             <!-- Legal Accordion -->
             <div class="accordion" id="accordionExample">
@@ -470,18 +447,18 @@
                         <tr>
                           <th scope="row">Did you use a tool for calculating the range of the risk of deanonymization?
                           </th>
-                          <td>Not needed</td>
-                          <td>Not needed</td>
-                          <td>Not needed</td>
-                          <td>Not needed</td>
+                          <td>n/a</td>
+                          <td>n/a</td>
+                          <td>n/a</td>
+                          <td>n/a</td>
                        </tr>
                         <tr>
                           <th scope="row">Are you using geolocalization capabilities?
                           </th>
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-x" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-x" style="color: #3c5950; font-size: 24px;"></i></td>
                        </tr>
                         <tr>
                           <th scope="row">Did you check that the open data platform respect all the
@@ -546,18 +523,18 @@
                       </thead>
                       <tbody>
                         <tr>
-                          <th scope="row">Have you created and generated the dataset?</th>
+                          <th scope="row">Do you have created and generated the dataset?</th>
                           <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
                           <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
                           <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
-                          <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: red; font-size: 24px;"></i></td>
                         </tr>
                         <tr>
                           <th scope="row">Are you the owner of the dataset?</th>
                           <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
                           <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
                           <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
-                          <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: red; font-size: 24px;"></i></td>
                        </tr>
                         <tr>
                           <th scope="row">Are you sure not to use third party data without the proper
@@ -614,8 +591,8 @@
                             used for re-identifying the person"?</th>
                           <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
                           <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
-                          <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
-                          <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
+                          <td>n/a</td>
+                          <td>n/a</td>
                        </tr>
                         <tr>
                           <th scope="row">Did you release the API (in case you have it) with an open
@@ -752,10 +729,10 @@
                             Did you check if there are some agreements with some other
                             partners in order to release the dataset with a reasonable price?
                           </th>
-                          <td>Not needed</td>
-                          <td>Not needed</td>
-                          <td>Not needed</td>
-                          <td>Not needed</td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                        </tr>
                         <tr>
                           <th scope="row">
@@ -773,10 +750,10 @@
                             price did you check if the limitation imposed by the new directive
                             2019/1024/EU are respected?
                           </th>
-                          <td>Not needed</td>
-                          <td>Not needed</td>
-                          <td>Not needed</td>
-                          <td>Not needed</td>
+                          <td>n/a</td>
+                          <td>n/a</td>
+                          <td>n/a</td>
+                          <td>n/a</td>
                        </tr>
                         <tr>
                           <th scope="row">
@@ -786,10 +763,10 @@
                               target="_blank">e-Commerce
                               directive</a> and regulation?
                           </th>
-                          <td>Not needed</td>
-                          <td>Not needed</td>
-                          <td>Not needed</td>
-                          <td>Not needed</td>
+                          <td>n/a</td>
+                          <td>n/a</td>
+                          <td>n/a</td>
+                          <td>n/a</td>
                        </tr>
                       </tbody>
                     </table>
@@ -822,9 +799,9 @@
                             Do you have a temporary policy for updating the dataset?
                           </th>
                           <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
+                          <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
+                          <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
                        </tr>
                         <tr>
                           <th scope="row">
@@ -853,66 +830,16 @@
                             mechanism for collecting request of deletion (e.g., right to be
                             forgotten)?
                           </th>
-                          <td>Not needed</td>
-                          <td>Not needed</td>
-                          <td>Not needed</td>
-                          <td>Not needed</td>
+                          <td>n/a</td>
+                          <td>n/a</td>
+                          <td>n/a</td>
+                          <td>n/a</td>
                        </tr>
                       </tbody>
                     </table>
                   </div>
                 </div>
               </div>
-            </div>
-            <h3 class="analysis-second-title">Publication license</h3>
-            <p class="analysis-text">
-              Finally, a fundamental step of the legal analysis is the <span
-                class="underlined--bg underlined--offset--bg"><b>choice of the publication license</b></span> for the
-              new mashup datasets.
-              Of course, this choice must consider the original licenses of the source datasets, which, in our case,
-              were all published under <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank"><b>CC BY
-                  3.0</b></a>.<br>
-              To better navigate the alternatives we made use of the <a
-                href="https://data.europa.eu/en/training/licensing-assistant" target="_blank"><b>Licensing Assistant
-                  tool</b></a>
-              provided by the European Commission, and we decided to publish <b>all nine mashup datasets under a <a
-                  href="https://creativecommons.org/licenses/by/4.0/legalcode" target="_blank">CC BY 4.0</a>
-                license</b>.
-            </p>
-            <p class="analysis-text">The table below showcases the original licenses of the original datasets and the
-              final publication license of the mashup datasets:
-            </p>
-            <div class="table-responsive">
-              <table class="table table-hover align-middle">
-                <thead class="table-light">
-                  <tr>
-                    <th scope="col">ID</th>
-                    <th scope="col">Dataset</th>
-                    <th scope="col">Original licenses</th>
-                    <th scope="col">Final license</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">MD1</th>
-                    <td>General religious observance in each region</td>
-                    <td>CC BY 3.0, CC BY 3.0, CC BY 3.0</td>
-                    <td>CC BY 4.0</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">MD2</th>
-                    <td>Pregnancy rates in young women</td>
-                    <td>CC BY 3.0, CC BY 3.0, CC BY 3.0</td>
-                    <td>CC BY 4.0</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">MD3</th>
-                    <td>Education leavers' rates in young women</td>
-                    <td>CC BY 3.0, CC BY 3.0, CC BY 3.0</td>
-                    <td>CC BY 4.0</td>
-                  </tr>
-                </tbody>
-              </table>
             </div>
           </div>
         </div>
@@ -3454,14 +3381,6 @@
             <br>
             <h4>Softwares used</h4>
             <p>
-              <b>Leaflet</b>: Copyright (c) 2010-2023, Volodymyr Agafonkin
-Copyright (c) 2010-2011, CloudMade -
-All rights reserved. (<a href= "https://github.com/Leaflet/Leaflet/blob/main/LICENSE">BSD 2-Clause "Simplified" License</a>)
-            </p>
-            <p>
-              <b>Plotly.js</b>: Copyright (c) 2021 Plotly, Inc - All rights reserved (
-<a href="https://github.com/plotly/plotly.js/blob/master/LICENSE">MIT License</a>)
-            </p>
             <p>
               <b>amCharts</b>: <a href="https://github.com/amcharts/amcharts5/blob/master/packages/shared/LICENSE">linkware
                 license</a>
