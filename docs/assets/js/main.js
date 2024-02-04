@@ -293,7 +293,7 @@ function revealBG_gray(delay) {
   }
 }
 
-/* --- Highcharts --- */
+/* --- AMcharts --- */
 function toggleVisualization(containerId, series) {
   fetch(`./assets/data/eu/KW_${containerId}.json`)
     .then((response) => response.json())
@@ -301,7 +301,7 @@ function toggleVisualization(containerId, series) {
       series.data.setAll(data);
     })
     .catch((error) => {
-      console.error("Error fetching JSON data:", error);
+      series.data.setAll(null)
     });
 }
 
@@ -319,10 +319,10 @@ function wordcloud() {
         series.data.setAll(data);
     })
     .catch((error) => {
+      series.data.setAll(data)
       console.error("Error fetching JSON data:", error);
     });
   
-  //set a jquery event listener for the buttons and update the amcharts wordcloud accordingly
   $('#viz-buttons .map-li').click(function() {
     $('#viz-buttons .map-li').removeClass("active");
     $(this).addClass("active");
