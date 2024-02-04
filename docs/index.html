@@ -894,6 +894,16 @@
               <h2 class="analysis-title">Technical analysis</h2>
             </div>
             <h3 class="analysis-second-title">Source datasets</h3>
+             <p class="analysis-text">
+              The datasets we used in this project come from prestigious open-access databases. Publishing datasets as open data requires that the data be made available in formats that are:
+              </p>
+              <ul>
+               <li>open;</li> 
+                <li>non-proprietary;</li>
+                <li>standardized;</li>
+                <li>neutral with respect to the applications needed to access the data.</li>
+            </ul>
+           
             <p class="analysis-text">
               All source dataset have been evaluated based on the
               <span class="underlined--bg underlined--offset--bg">
@@ -901,67 +911,20 @@
                     target="_blank">metadata model</a> provided by AGID</b></span> that classifies metadata quality on a
               range of 4 levels according to two factors: <i>data-metadata bond</i> and <i>detail level</i>
             </p>
-
-            <!-- Tables for source datasets (as in Datasets section)-->
-            <div class="table-responsive">
-              <table class="table table-hover align-middle">
-                <thead class="table-light">
-                  <tr>
-                    <th scope="col">ID</th>
-                    <th scope="col">Provenience</th>
-                    <th scope="col">Format</th>
-                    <th scope="col" style="width:50%">Metadata</th>
-                    <th scope="col">URI</th>
-                    <th scope="col">License</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">D1</th>
-                    <td>demo</td>
-                    <td>.csv, .xlsx, .pdf</td>
-                    <td>Level 2: A weak data-metadata bond since an external <b>pdf</b> with additional information and
-                      methodology reports is accessible; Dataset detail level, information are shared by all dataset
-                      data</td>
-                    <td><a href="https://demo.istat.it/app/?i=RIC&l=en" target="_blank">2017Population</a></td>
-                    <td>CC BY 3.0</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">D2</th>
-                    <td>demo</td>
-                    <td>.csv, .xlsx, .pdf</td>
-                    <td>Level 1: Not provided</td>
-                    <td><a href="https://demo.istat.it/app/?i=POS&l=en" target="_blank">201819Population</a></td>
-                    <td>CC BY 3.0</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">D3</th>
-                    <td>I.Stat</td>
-                    <td>.csv, .xlsx, .px, .xml</td>
-                    <td>Level 4: An SDMX structured file is downloadable with a strong data-metadata bond and a
-                      datum-level detail of description. They are machine readable.<br>
-                      Level 2: Additional metadata to provide transparent information about sources and methodologies
-                      are available in a separated <a href="https://siqual.istat.it/SIQual/visualizza.do?id=0058000"
-                        target="_blank"></a>>webpage</a>, accessible through a sidebar menu</td>
-                    <td><a href="http://dati.istat.it/index.aspx?queryid=24349" target="_blank">ReligiousObservance</a>
-                    </td>
-                    <td>CC BY 3.0</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">D4</th>
-                    <td>IstatData</td>
-                    <td>.csv, .xlsx, .json, .xml</td>
-                    <td>Level 4: An SDMX structured file is downloadable with a strong data-metadata bond and a
-                      datum-level detail of description. They are machine readable.</td>
-                    <td><a
-                        href="https://esploradati.istat.it/databrowser/#/en/dw/categories/IT1,POP,1.0/POP_BIRTHFERT/DCIS_NATI1/DCIS_NATI1_PARENT_CHARACT/IT1,25_74_DF_DCIS_NATI1_8,1.0"
-                        target="_blank">LiveBirths</a></td>
-                    <td>CC BY 3.0</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
+            <p class="analysis-text">
+              The reference databases of the Senate and Teseo have very weak metadata and do not surpass level one. Both the dataset from the European Parliament and our reprocessed datasets, on the other hand, reach level two of AGID. The data are accompanied by external metadata (e.g., included on the dataset download page or in separate files).
+               </p>
+               <p class="analysis-text">
+                The Senate database, in particular, lacks appropriate metadata, but the unit of measurement for the information contained in the dataset is the RDF triple: it constitutes the minimum informational unit and represents a statement, articulated into subject, predicate, and object. This makes the data highly queryable with API solutions and downloadable in many different formats, greatly facilitating interoperability and accessibility.
+               </p>
+               <p class="analysis-text">
+                To extract data among legislations, we relied on the Senate ontology, which <span class="underlined--bg underlined--offset--bg">
+                  <b>can be consulted on the <a href="https://dati.senato.it/sito/21#OggettoTrattazione"
+                    target="_blank">website.</a></b></span>
+               </p>
+               <img class="img-fluid"src="https://dati.senato.it/application/xmanager/projects/datisenato/img/ontologia-senato-repubblica-w800.png">
+            <!-- Tables for source datasets (as in Datasets section)-->           
+            
             <h3 class="analysis-second-title">
               RDF Assertion and Metadata for the mashup datasets
             </h3>
@@ -983,29 +946,62 @@
               because this allowed us to follow more detailed national guidelines and therfore <span
                 class="underlined--bg underlined--offset--bg"><b>ensure interoperability
                   and harmonization with other data on a national level</b></span>.
+                  <br><br>
+                  An OWL ontology serialized in RDF/XML has been defined and is available on dati.gov.it.
+            The ontology, in addition to being available for download in the native .owl format, can be visualized and navigated through the<a href="http://www.essepuntato.it/lode"
+            target="_blank"><b> open-source LODE (Live OWL Documentation Environment) </b></a> service both in Italian and English versions.
             </p>
-
+            <img class="img-fluid"src="https://dati.gov.it/sites/default/files/2020-02/DCAT-AP_IT_UML.png">
+            <br><br>
             <p class="analysis-text">
-              Moreover:<br>
-            <ul class="analysis-text">
-              <li>To describe in full transparency the sources and the activities underlying the creation of our mashup
-                datasets we adopted <a href="https://www.w3.org/TR/prov-o/" target="_blank"><b>PROV-O - the provenance
-                    ontology</b></a> as strongly recommended on a european level and also allowed by DCAT-AP_IT <a
-                  href="https://docs.italia.it/italia/daf/lg-patrimonio-pubblico/it/stabile/modellometadati.html"
-                  target="_blank">metadata model</a></li>
-              <li>Since all our mashup datasets are series containing individual datasets for each year (2017, 2018,
-                2019) and only DCAT-AP 3.0 currently provides a <code>dcat:DatasetSeries</code> with related properties,
-                again, we followed AGID's <a
-                  href="https://docs.italia.it/italia/daf/lg-patrimonio-pubblico/it/stabile/modellometadati.html"
-                  target="_blank">metadata model</a> instruction about how to handle relationships between datasets.<br>
-                We emphasized individual elements of the serie and created, inside each mashup dataset RDF assertion, a
-                triple with a Serie Dataset subject, connected through the Dublin Core property <code>dct:type</code> to
-                the value &lt;http://inspire.ec.europa.eu/metadata-codelist/ResourceType/series&gt; .<br> Then we
-                specified which dataset belonged to the Serie by means of <code>dct:hasPart</code> property.<br>
-                Finally, every individual yearly Mashup dataset, it's connected in its turn with the related Serie by
-                means of <code>dct:isPartOf</code></li>
-            </ul>
+              We consulted the official thesaurus of the European Union, the <a
+              href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/eurovoc" target="_blank">EuroVoc</a>, to enable a clear and standardized definition of the keywords for our new datasets.
             </p>
+            <div class="column content d-flex flex-column justify-content-center align-items-center" >
+              <div class="col-lg-10" data-aos="fade-up" data-aos-delay="150">
+                <p>we then produced new mashup datasets:</p>
+              </div>
+            </div>
+            <div class="row portfolio-container d-flex flex-row justify-content-center" data-aos="fade-up" data-aos-delay="300">
+              <div class="col-lg-3 col-md-4 portfolio-item source-dataset">
+                <div class="icon-box">
+                  <div class="dataset-title">
+                    <i class="bi bi-file-earmark"></i>
+                    <h3>Italian legislatures</h3>
+                  </div>
+                  <p>
+                    <b>Metadata</b>:<a hrer="https://github.com/NicoleLiggeri/IT-and-EU_Parliaments/blob/fe8e91963e50b557cbc5777859fb0f7d4b945126/DCAT-IT.ttl"target="_blank">provided</a><br>
+                    </p>
+                  <div class="license-label text-center"><img src="https://licensebuttons.net/l/by/4.0/88x31.png" title="Creative Commons CC BY 4.0 Universal Public Domain Dedication."></div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 portfolio-item source-dataset">
+                <div class="icon-box">
+                  <div class="dataset-title">
+                    <i class="bi bi-file-earmark"></i>
+                    <h3>Teseo hypernyms
+                    </h3>
+                  </div>
+                  <p>
+                    <b>Metadata</b>:<a hrer="https://github.com/NicoleLiggeri/IT-and-EU_Parliaments/blob/fe8e91963e50b557cbc5777859fb0f7d4b945126/DCAT-IT.ttl" target="_blank">provided</a><br>
+                   </p>
+                  <div class="license-label text-center"><img src="https://licensebuttons.net/l/by/4.0/88x31.png" title="Creative Commons CC BY 4.0 Universal Public Domain Dedication."></div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 portfolio-item source-dataset">
+                <div class="icon-box">
+                  <div class="dataset-title">
+                    <i class="bi bi-file-earmark"></i>
+                    <h3>EurLex_DDiR_1996-2019</h3>
+                  </div>
+                  <p>
+                    <b>Metadata</b>: <a href="https://raw.githubusercontent.com/NicoleLiggeri/IT_Parliament/main/data/eu/EurLex_DDiR_1996-2019.ttl" target="_blank">provided</a><br>
+                    </p>
+                  <div class="license-label text-center"><img src="https://licensebuttons.net/l/by/4.0/88x31.png" title="Creative Commons CC BY 4.0 Universal Public Domain Dedication."></div>
+                </div>
+              </div>
+            </div>
+            
             <!-- FAIR principles -->
             <h3 class="analysis-second-title">FAIR principles</h3>
             <p class="analysis-text">
