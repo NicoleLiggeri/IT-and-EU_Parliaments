@@ -332,6 +332,10 @@ function wordcloud() {
 }
 
 
+function modifyAndHide(id) {
+    $(id).toggle();
+}
+
 $(document).ready(function() {
   wordcloud();
 });
