@@ -2159,7 +2159,8 @@ h3.analysis-second-title {
 }
 
 #viz-buttons li:hover,
-#viz-buttons li:focus {
+#viz-buttons li:focus,
+#viz-buttons li.active {
   color: #fff;
   background: var(--accent-color);
 }
@@ -2241,4 +2242,21 @@ h3.analysis-second-title {
 
 .portfolio-item > div > p {
   border-top: var(--accent-color) solid 1px;
+}
+
+span.license-label {
+  border: none !important;
+  margin-left: auto;
+}
+
+i.bi.bi-check-lg {
+  color: var(--accent-color) !important;
+}
+
+i.bi.bi-x {
+  color: red !important;
+}
+
+td, t#h {
+  text-align: center;
 }

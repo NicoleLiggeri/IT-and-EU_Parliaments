@@ -292,3 +292,49 @@ function revealBG_gray(delay) {
     }
   }
 }
+
+/* --- Highcharts --- */
+
+
+
+function toggleVisualization(containerId, series) {
+  fetch(`./assets/data/eu/KW_${containerId}.json`)
+    .then((response) => response.json())
+    .then((data) => {
+      series.data.setAll(data);
+    })
+    .catch((error) => {
+      console.error("Error fetching JSON data:", error);
+    });
+}
+
+function wordcloud() {
+  var root = am5.Root.new("wordcloud-container");
+  var series = root.container.children.push(
+    am5wc.WordCloud.new(root, {
+      categoryField: "keyword",
+      valueField: "count",
+    })
+  );
+  fetch("./assets/data/eu/KW_all.json")
+    .then((response) => response.json())
+    .then((data) => {
+        series.data.setAll(data);
+    })
+    .catch((error) => {
+      console.error("Error fetching JSON data:", error);
+    });
+  
+  //set a jquery event listener for the buttons and update the amcharts wordcloud accordingly
+  $('#viz-buttons .map-li').click(function() {
+    $('#viz-buttons .map-li').removeClass("active");
+    $(this).addClass("active");
+    toggleVisualization($(this).attr('id'), series);
+  });
+
+}
+
+
+$(document).ready(function() {
+  wordcloud();
+});

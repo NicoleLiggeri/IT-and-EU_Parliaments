@@ -39,10 +39,12 @@
 
 
   <!-- VISUALISATIONS -->
-  <!-- amCharts -->
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/modules/wordcloud.js"></script>
   <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
-  <script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
-  <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/wc.js"></script>
+
+
 
   <!-- Plotly -->
 
@@ -213,6 +215,7 @@
                 <b>URI</b>: <a href="http://dati.camera.it/sparql" target="_blank">dati.camera.it/sparql</a><br>
                 <b>License</b>: CC BY 4.0<br>
               </p>
+              <div class="license-label text-center"><img src="https://licensebuttons.net/l/by/4.0/88x31.png" title="Creative Commons CC BY 4.0 Universal Public Domain Dedication."></div>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 portfolio-item source-dataset">
@@ -222,14 +225,31 @@
                 <h3>Senato</h3>
               </div>
               <p>
-                <b>Source</b>: SPARQL endpoint<br>
-                <b>Format</b>: .rdf<br>
-                <b>Metadata</b>: not provided<br>
-                <b>URI</b>: <a href="http://dati.senato.it/sparql" target="_blank">dati.senato.it/sparql</a><br>
-                <b>License</b>: CC BY 3.0<br>
+                  <b>Source</b>: SPARQL endpoint<br>
+                  <b>Format</b>: .rdf<br>
+                  <b>Metadata</b>: not provided<br>
+                  <b>URI</b>: <a href="http://dati.senato.it/sparql" target="_blank">dati.senato.it/sparql</a><br>
+                  <b>License</b>: CC BY 3.0<br>
               </p>
+              <div class="license-label text-center"><img src="https://licensebuttons.net/l/by/3.0/it/88x31.png" title="Creative Commons CC BY 3.0 Universal Public Domain Dedication."></div>
             </div>
           </div>
+            <div class="col-lg-3 col-md-4 portfolio-item source-dataset">
+              <div class="icon-box">
+                <div class="dataset-title">
+                  <i class="bi bi-file-earmark"></i>
+                  <h3>CEPS EurLex dataset V2</h3>
+                </div>
+                <p>
+                  <b>Source</b>: Harvard Dataverse<br>
+                  <b>Format</b>: .csv<br>
+                  <b>Metadata</b>: <a href="https://dataverse.harvard.edu/api/datasets/export?exporter=dataverse_json&persistentId=doi%3A10.7910/DVN/0EGYWY">provided</a><br>
+                  <b>URI</b>: <a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/0EGYWY" target="_blank">https://dataverse.harvard.edu</a><br>
+                  <b>License</b>: CC0 1.0<br>
+                </p>
+                <div class="license-label text-center"><img src="https://licensebuttons.net/p/zero/1.0/88x31.png" title="Creative Commons CC0 1.0 Universal Public Domain Dedication."></div>
+              </div>
+            </div>
           </div>
 
           <div class="row content">
@@ -250,20 +270,22 @@
                   <b>URI</b>: <a href="">link</a><br>
                   <b>License</b>: CC BY 4.0<br>
                 </p>
+                <div class="license-label text-center"><img src="https://licensebuttons.net/l/by/4.0/88x31.png" title="Creative Commons CC BY 4.0 Universal Public Domain Dedication."></div>
               </div>
             </div>
             <div class="col-lg-3 col-md-4 portfolio-item source-dataset">
               <div class="icon-box">
                 <div class="dataset-title">
                   <i class="bi bi-file-earmark"></i>
-                  <h3>Mashup 2</h3>
+                  <h3>EurLex_DDiR_1996-2019</h3>
                 </div>
                 <p>
-                  <b>Format</b>: .rdf<br>
-                  <b>Metadata</b>: <br>
-                  <b>URI</b>: <a href="">link</a><br>
+                  <b>Format</b>: .json<br>
+                  <b>Metadata</b>: <a href="https://raw.githubusercontent.com/NicoleLiggeri/IT_Parliament/main/data/eu/EurLex_DDiR_1996-2019.xml" target="_blank">provided</a><br>
+                  <b>URI</b>: <a href="https://github.com/NicoleLiggeri/IT_Parliament/raw/main/data/eu/EurLex_DDiR_1996-2019.zip" target="_blank">github.com</a><br>
                   <b>License</b>: CC BY 4.0<br>
                 </p>
+                <div class="license-label text-center"><img src="https://licensebuttons.net/l/by/4.0/88x31.png" title="Creative Commons CC BY 4.0 Universal Public Domain Dedication."></div>
               </div>
             </div>
           </div>
@@ -277,7 +299,6 @@
 
         <div class="section-title" data-aos="fade-up">
           <h2>Datasets Analyses</h2>
-          <p>The 7 source datasets have been analysed for four aspects.</p>
         </div>
 
       <!-- Quality box -->
@@ -317,7 +338,7 @@
               <table class="table table-hover align-middle">
                 <thead class="table-light">
                   <tr>
-                    <th scope="col">ID Dataset</th>
+                    <th scope="col">Dataset</th>
                     <th scope="col">Accuracy</th>
                     <th scope="col">Coherence</th>
                     <th scope="col">Completeness</th>
@@ -326,52 +347,30 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <th scope="row">D1 - Population 2017</th>
+                    <th scope="row">Camera</th>
                     <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                     <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                     <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                     <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                   </tr>
                   <tr>
-                    <th scope="row">D2 - Population 2018, 2019</th>
+                    <th scope="row">Senato</th>
                     <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                     <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                     <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                     <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                   </tr>
                   <tr>
-                    <th scope="row">D3 - Religious observance</th>
+                    <th scope="row">CEPS EurLex dataset V2</th>
                     <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                     <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                     <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                     <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                   </tr>
-                  <tr>
-                    <th scope="row">D4 - Live births</th>
-                    <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                    <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                    <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                    <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">D5 - Spontaneous abortions</th>
+                    <th scope="row">EurLex_DDiR_1996-2019</th>
                     <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                     <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                     <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
-                    <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">D6 - Induced abortions</th>
-                    <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                    <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                    <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
-                    <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">D7 - Early leavers from education</th>
-                    <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                    <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                    <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                     <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                   </tr>
                 </tbody>
@@ -416,14 +415,11 @@
                     <table class="table table-hover align-middle">
                       <thead class="table-light">
                         <tr>
-                          <th scope="col">To check:</th>
+                          <th scope="col"></th>
                           <th scope="col">D1</th>
                           <th scope="col">D2</th>
-                          <th scope="col">D3</th>
-                          <th scope="col">D4</th>
-                          <th scope="col">D5</th>
-                          <th scope="col">D6</th>
-                          <th scope="col">D7</th>
+                          <th scope="col">CEPS EurLex dataset V2</th>
+                          <th scope="col">EurLex_DDiR_1996-2019</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -431,9 +427,6 @@
                           <th scope="row"> Is the dataset free of any personal data as defined in the
                             Regulation (EU) 2016/679?
                           </th>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
@@ -447,9 +440,6 @@
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                         </tr>
                         <tr>
                           <th scope="row"> Is the dataset free of any particular personal data (art. 9
@@ -458,10 +448,7 @@
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                        </tr>
+                       </tr>
                         <tr>
                           <th scope="row">Is the dataset free of any information that combined with
                             common data available in the web, could identify the person?
@@ -470,10 +457,7 @@
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                        </tr>
+                       </tr>
                         <tr>
                           <th scope="row">Is the dataset free of any information related to human rights
                             (e.g., refugees, witness protection, etc.)
@@ -482,10 +466,7 @@
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                        </tr>
+                       </tr>
                         <tr>
                           <th scope="row">Did you use a tool for calculating the range of the risk of deanonymization?
                           </th>
@@ -493,10 +474,7 @@
                           <td>Not needed</td>
                           <td>Not needed</td>
                           <td>Not needed</td>
-                          <td>Not needed</td>
-                          <td>Not needed</td>
-                          <td>Not needed</td>
-                        </tr>
+                       </tr>
                         <tr>
                           <th scope="row">Are you using geolocalization capabilities?
                           </th>
@@ -504,10 +482,7 @@
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                        </tr>
+                       </tr>
                         <tr>
                           <th scope="row">Did you check that the open data platform respect all the
                             privacy regulations (registration of the end-user, profiling, cookies,
@@ -517,10 +492,7 @@
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                        </tr>
+                       </tr>
                         <tr>
                           <th scope="row">Do you know who, in your open data platform, is the
                             Controller and Processor of the privacy data of the system?
@@ -529,10 +501,7 @@
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                        </tr>
+                       </tr>
                         <tr>
                           <th scope="row">Have you checked the privacy regulation of the country where the dataset are
                             physically stored?
@@ -541,10 +510,7 @@
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                        </tr>
+                       </tr>
                         <tr>
                           <th scope="row">Do you have non-personal data?
                           </th>
@@ -552,10 +518,7 @@
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                        </tr>
+                       </tr>
                       </tbody>
                     </table>
                   </div>
@@ -574,22 +537,16 @@
                     <table class="table table-hover align-middle">
                       <thead class="table-light">
                         <tr>
-                          <th scope="col">To check:</th>
+                          <th scope="col"></th>
                           <th scope="col">D1</th>
                           <th scope="col">D2</th>
-                          <th scope="col">D3</th>
-                          <th scope="col">D4</th>
-                          <th scope="col">D5</th>
-                          <th scope="col">D6</th>
-                          <th scope="col">D7</th>
+                          <th scope="col">CEPS EurLex dataset V2</th>
+                          <th scope="col">EurLex_DDiR_1996-2019</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
                           <th scope="row">Have you created and generated the dataset?</th>
-                          <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
-                          <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
-                          <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
                           <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
                           <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
                           <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
@@ -601,10 +558,7 @@
                           <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
                           <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
                           <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
-                          <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
-                          <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
-                          <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
-                        </tr>
+                       </tr>
                         <tr>
                           <th scope="row">Are you sure not to use third party data without the proper
                             authorization and license?</th>
@@ -612,10 +566,7 @@
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                        </tr>
+                       </tr>
                         <tr>
                           <th scope="row">Have you checked if there are any limitations in your
                             national legal system for releasing some kind of datasets with
@@ -624,10 +575,7 @@
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                        </tr>
+                       </tr>
                       </tbody>
                     </table>
                   </div>
@@ -646,15 +594,12 @@
                     <table class="table table-hover align-middle">
                       <thead class="table-light">
                         <tr>
-                          <th scope="col">To check:</th>
+                          <th scope="col"></th>
                           <th scope="col">D1</th>
                           <th scope="col">D2</th>
-                          <th scope="col">D3</th>
-                          <th scope="col">D4</th>
-                          <th scope="col">D5</th>
-                          <th scope="col">D6</th>
-                          <th scope="col">D7</th>
-                        </tr>
+                          <th scope="col">CEPS EurLex dataset V2</th>
+                          <th scope="col">EurLex_DDiR_1996-2019</th>
+                       </tr>
                       </thead>
                       <tbody>
                         <tr>
@@ -663,10 +608,7 @@
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                        </tr>
+                       </tr>
                         <tr>
                           <th scope="row"> Did you include the clause: "In any case the dataset can't be
                             used for re-identifying the person"?</th>
@@ -674,10 +616,7 @@
                           <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
                           <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
                           <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
-                          <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
-                          <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
-                          <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
-                        </tr>
+                       </tr>
                         <tr>
                           <th scope="row">Did you release the API (in case you have it) with an open
                             source license?</th>
@@ -685,10 +624,7 @@
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                        </tr>
+                       </tr>
                         <tr>
                           <th scope="row">Have you checked that the open data/API platform license regime
                             is in compliance with your IPR policy?</th>
@@ -696,10 +632,7 @@
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                        </tr>
+                       </tr>
                       </tbody>
                     </table>
                   </div>
@@ -718,15 +651,12 @@
                     <table class="table table-hover align-middle">
                       <thead class="table-light">
                         <tr>
-                          <th scope="col">To check:</th>
+                          <th scope="col"></th>
                           <th scope="col">D1</th>
                           <th scope="col">D2</th>
-                          <th scope="col">D3</th>
-                          <th scope="col">D4</th>
-                          <th scope="col">D5</th>
-                          <th scope="col">D6</th>
-                          <th scope="col">D7</th>
-                        </tr>
+                          <th scope="col">CEPS EurLex dataset V2</th>
+                          <th scope="col">EurLex_DDiR_1996-2019</th>
+                       </tr>
                       </thead>
                       <tbody>
                         <tr>
@@ -737,10 +667,7 @@
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                        </tr>
+                       </tr>
                         <tr>
                           <th scope="row">Did you check the limitations for the publication stated by your
                             national legislation or by the EU directives?
@@ -749,10 +676,7 @@
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                        </tr>
+                       </tr>
                         <tr>
                           <th scope="row">Did you check if there are some limitations connected to the
                             international relations, public security or national defence?
@@ -761,10 +685,7 @@
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                        </tr>
+                       </tr>
                         <tr>
                           <th scope="row">Did you check if there are some limitations concerning the
                             public interest?
@@ -773,10 +694,7 @@
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                        </tr>
+                       </tr>
                         <tr>
                           <th scope="row">
                             Did you check the international law limitations?
@@ -785,16 +703,10 @@
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                        </tr>
+                       </tr>
                         <tr>
                           <th scope="row">Did you check the INSPIRE law limitations for the spatial data?
                           </th>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
@@ -818,14 +730,11 @@
                     <table class="table table-hover align-middle">
                       <thead class="table-light">
                         <tr>
-                          <th scope="col">To check:</th>
+                          <th scope="col"></th>
                           <th scope="col">D1</th>
                           <th scope="col">D2</th>
-                          <th scope="col">D3</th>
-                          <th scope="col">D4</th>
-                          <th scope="col">D5</th>
-                          <th scope="col">D6</th>
-                          <th scope="col">D7</th>
+                          <th scope="col">CEPS EurLex dataset V2</th>
+                          <th scope="col">EurLex_DDiR_1996-2019</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -837,10 +746,7 @@
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                        </tr>
+                       </tr>
                         <tr>
                           <th scope="row">
                             Did you check if there are some agreements with some other
@@ -850,10 +756,7 @@
                           <td>Not needed</td>
                           <td>Not needed</td>
                           <td>Not needed</td>
-                          <td>Not needed</td>
-                          <td>Not needed</td>
-                          <td>Not needed</td>
-                        </tr>
+                       </tr>
                         <tr>
                           <th scope="row">
                             Did you check if the open data platform terms of service
@@ -864,10 +767,7 @@
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                        </tr>
+                       </tr>
                         <tr>
                           <th scope="row"> In case you decide to release the dataset to a reasonable
                             price did you check if the limitation imposed by the new directive
@@ -877,10 +777,7 @@
                           <td>Not needed</td>
                           <td>Not needed</td>
                           <td>Not needed</td>
-                          <td>Not needed</td>
-                          <td>Not needed</td>
-                          <td>Not needed</td>
-                        </tr>
+                       </tr>
                         <tr>
                           <th scope="row">
                             In case you decide to release the dataset to a reasonable
@@ -893,10 +790,7 @@
                           <td>Not needed</td>
                           <td>Not needed</td>
                           <td>Not needed</td>
-                          <td>Not needed</td>
-                          <td>Not needed</td>
-                          <td>Not needed</td>
-                        </tr>
+                       </tr>
                       </tbody>
                     </table>
                   </div>
@@ -915,15 +809,12 @@
                     <table class="table table-hover align-middle">
                       <thead class="table-light">
                         <tr>
-                          <th scope="col">To check:</th>
+                          <th scope="col"></th>
                           <th scope="col">D1</th>
                           <th scope="col">D2</th>
-                          <th scope="col">D3</th>
-                          <th scope="col">D4</th>
-                          <th scope="col">D5</th>
-                          <th scope="col">D6</th>
-                          <th scope="col">D7</th>
-                        </tr>
+                          <th scope="col">CEPS EurLex dataset V2</th>
+                          <th scope="col">EurLex_DDiR_1996-2019</th>
+                       </tr>
                       </thead>
                       <tbody>
                         <tr>
@@ -934,10 +825,7 @@
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                        </tr>
+                       </tr>
                         <tr>
                           <th scope="row">
                             Do you have some mechanism for informing the end-user that
@@ -948,10 +836,7 @@
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                        </tr>
+                       </tr>
                         <tr>
                           <th scope="row">
                             Did you check if the dataset for some reason cannot be indexed
@@ -961,10 +846,7 @@
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
                           <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
-                        </tr>
+                       </tr>
                         <tr>
                           <th scope="row">
                             In case of personal data, do you have a reasonable technical
@@ -975,10 +857,7 @@
                           <td>Not needed</td>
                           <td>Not needed</td>
                           <td>Not needed</td>
-                          <td>Not needed</td>
-                          <td>Not needed</td>
-                          <td>Not needed</td>
-                        </tr>
+                       </tr>
                       </tbody>
                     </table>
                   </div>
@@ -1047,9 +926,6 @@
               <i class="bi bi-universal-access"></i>
               <h2 class="analysis-title">Ethical analysis</h2>
             </div>
-            <br>
-            <br>
-            <br>
             <p style='padding: 0 4em 2em 2em;' class="analysis-text">
               <br>
               For the ethical analysis of our project's data, we considered the <span class="underlined--bg underlined--offset--bg"><b> <a
@@ -3491,11 +3367,40 @@
           </svg>
         </div>
 
-      <div class="container">
-        <div class="row content">
-          <p class="analysis-text">conclusions - Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis sunt, assumenda illo cumque sit recusandae dolor voluptas quas quidem officiis architecto ducimus obcaecati itaque fugiat modi. Qui veritatis harum eos?</p>
+        <div class="container">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="viz-buttons">
+              <li class="map-li active" type="button" id="all">
+                  ALL
+              </li>
+              <li class="map-li" type="button" id="13" >
+                  Leg. 13
+              </li>
+              <li class="map-li" type="button" id="14" >
+                  Leg. 14
+              </li>
+              <li class="map-li" type="button" id="15">
+                Leg. 15
+              </li>
+              <li class="map-li" type="button" id="16">
+                Leg. 16
+              </li>
+              <li class="map-li" type="button" id="17">
+                Leg. 17
+              </li>
+              <li class="map-li" type="button" id="18">
+                Leg. 18
+              </li>
+            </ul>
+          </div>
+          <div class="row content">
+            <div class="col-lg-8" style="">
+            </div>
+            <div class="col-lg-6">
+              <div id="wordcloud-container" style="width: 40vw; height: 50vh;"></div>
+            </div>
+          </div>
         </div>
-      </div>
 
     </section><!-- End Visualizations Section -->
 
@@ -3532,7 +3437,9 @@
 
         <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-6">
-            <h4>Images and icons</h4>
+            <h4>Cover image</h4>
+            <p>The image comes from the Archivio storico della Camera dei deputati</p>
+            <br>
             <h4>Web template</h4>
             <p>This website is built on the HTML5 template <a
                 href="https://bootstrapmade.com/vesperr-free-bootstrap-template/" target="_blank">"Vesperr"</a> by <a
@@ -3540,15 +3447,11 @@
                 href="https://opensource.org/licenses/MIT" target="_blank">MIT</a></p>
           </div>
           <div class="col-lg-6">
-            <h4>Source Datasets</h4>
+            <h4>CESP EurLex dataset V2</h4>
             <p>
-              Creative Commons Attribution 3.0 Unported (<a href="https://creativecommons.org/licenses/by/3.0/legalcode"
-                target="_blank">CC BY 3.0</a>)
+              Borrett, Camille; Laurer, Moritz, 2020, "The CEPS EurLex dataset: 142.036 EU laws from 1952-2019 with full text and 22 variables", https://doi.org/10.7910/DVN/0EGYWY, Harvard Dataverse, V2, UNF:6:+hH0OxeHX0vYGiIOintTyA== [fileUNF]
             </p>
-            <h4>Mashup Datasets</h4>
-            <p>Creative Commons Attribution 4.0 International (<a
-                href="https://creativecommons.org/licenses/by/4.0/legalcode" target="_blank">CC BY 4.0</a>)
-            </p>
+            <br>
             <h4>Softwares used</h4>
             <p>
               <b>Leaflet</b>: Copyright (c) 2010-2023, Volodymyr Agafonkin

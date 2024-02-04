@@ -1,0 +1,274 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+<https://github.com/NicoleLiggeri/IT_Parliament/tree/main/data/eu/EurLex_DDiR_1996-2019> a dcat:Catalog ;
+    dct:identifier "EurLex_DDiR_1996-2019";
+    dct:title "EurLex_DDiR_1996-2019" ;
+    dct:description "Catalog containing the EurLex dataset from 1996 to 2019"@en ;
+    dct:language <http://publications.europa.eu/resource/authority/language/ENG> ;
+    dct:issued "2024-02-01"^^xsd:date ;
+    dcat:keyword "Law"@en, "European Union"@en, "Italian legislation"@en, "EU legislation"@en, "Italy"@en ;
+    dct:subject "Law"@en, "European Union"@en, "Italian legislation"@en, "EU legislation"@en, "Italy"@en ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/JUST> ;
+    dcat:dataset <https://nicoleliggeri.github.io/IT_Parliament/EurLex_DDiR_1996-2019.json>,
+                 <https://nicoleliggeri.github.io/IT_Parliament/EurLex_Leg13.json>,
+                 <https://nicoleliggeri.github.io/IT_Parliament/EurLex_Leg14.json>,
+                 <https://nicoleliggeri.github.io/IT_Parliament/EurLex_Leg15.json>,
+                 <https://nicoleliggeri.github.io/IT_Parliament/EurLex_Leg16.json>,
+                 <https://nicoleliggeri.github.io/IT_Parliament/EurLex_Leg17.json>,
+                 <https://nicoleliggeri.github.io/IT_Parliament/EurLex_Leg18.json> .
+
+
+<https://nicoleliggeri.github.io/IT_Parliament/EurLex_DDiR_1996-2019.json>  a dcat:Dataset, prov:Entity ;
+    dct:title "EurLex dataset of Directives, Decisions aimed at Italy and Regulations from 1996 to 2019"@en ;
+    dct:description "This dataset contains data coming from the European Union's legal database EurLex. It includes all the Directives, Decisions aimed at Italy and Regulations issued from 1996 to 2019."@en ;
+    prov:wasDerivedFrom <https://doi.org/10.7910/DVN/0EGYWY> ;
+    dct:modified "2024-02-01"^^xsd:date ;
+    dct:issued "2024-02-01"^^xsd:date ;
+
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/JUST> ;
+    dcat:keyword "Law"@en, "European Union"@en, "Italian legislation"@en, "EU legislation"@en, "Italy"@en ;
+    dct:subject "Law"@en, "European Union"@en, "Italian legislation"@en, "EU legislation"@en, "Italy"@en ;
+
+    dct:publisher "Leonardo Zilli" ;
+    dct:creator "Leonardo Zilli" ;
+    dcat:contactPoint "leonardo.zilli@studio.unibo.it" ;
+
+    dct:language <http://publications.europa.eu/resource/authority/language/ENG> ;
+    dct:source "The official EUR-Lex database: https://eur-lex.europa.eu/homepage.html" ;
+
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/NEVER> ;
+
+    dcat:landingPage <https://nicoleliggeri.github.io/IT_Parliament/> ;
+
+    dcat:startDate "1996"^^xsd:gYear ;
+    dcat:endDate "2019"^^xsd:gYear ;
+
+    dcat:distribution <dataset/pathologies.json> ;
+
+    dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcat:mediaType <http://www.iana.org/assignments/media-types/text/json> ;
+    dcat:downloadURL <https://github.com/NicoleLiggeri/IT_Parliament/raw/main/data/eu/EurLex_DDiR_1996-2019.zip> ;
+    dcat:byteSize "69.5 MB" ;
+
+    adms:status <http://purl.org/adms/status/Completed> ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> .
+
+
+<https://nicoleliggeri.github.io/IT_Parliament/EurLex_Leg13.json>  a dcat:Dataset, prov:Entity ;
+    dct:title "EurLex dataset of Directives, Decisions aimed at Italy and Regulations from 9/05/1996 to 29/05/2001"@en ;
+    dct:description "This dataset contains data coming from the European Union's legal database EurLex. It includes all the Directives, Decisions aimed at Italy and Regulations issued during the XIII Italian Legislature."@en ;
+    prov:wasDerivedFrom <https://nicoleliggeri.github.io/IT_Parliament/EurLex_DDiR_1996-2019.json> ;
+    dct:modified "2024-02-01"^^xsd:date ;
+    dct:issued "2024-02-01"^^xsd:date ;
+
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/JUST> ;
+    dcat:keyword "Law"@en, "European Union"@en, "Legislature XIII of Italy"@en, "EU legislation"@en, "Italy"@en ;
+    dct:subject "Law"@en, "European Union"@en, "Legislature XIII of Italy"@en, "EU legislation"@en, "Italy"@en ;
+
+    dct:publisher "Leonardo Zilli" ;
+    dct:creator "Leonardo Zilli" ;
+    dcat:contactPoint "leonardo.zilli@studio.unibo.it" ;
+
+    dct:language <http://publications.europa.eu/resource/authority/language/ENG> ;
+    dct:source "The official EUR-Lex database: https://eur-lex.europa.eu/homepage.html" ;
+
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/NEVER> ;
+
+    dcat:landingPage <https://nicoleliggeri.github.io/IT_Parliament/> ;
+
+    dcat:startDate "1996-05-09"^^xsd:date ;
+    dcat:endDate "2001-05-29"^^xsd:date ;
+    dcat:distribution <https://github.com/NicoleLiggeri/IT_Parliament/blob/main/data/eu/EurLex_DDiR_1996-2019.zip> ;
+
+    dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcat:mediaType <http://www.iana.org/assignments/media-types/text/json> ;
+    dcat:downloadURL <https://github.com/NicoleLiggeri/IT_Parliament/raw/main/data/eu/EurLex_DDiR_1996-2019.zip> ;
+    dcat:byteSize "20.2 MB" ;
+
+    adms:status <http://purl.org/adms/status/Completed> ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> .
+
+
+<https://nicoleliggeri.github.io/IT_Parliament/EurLex_Leg14.json>  a dcat:Dataset, prov:Entity ;
+    dct:title "EurLex dataset of Directives, Decisions aimed at Italy and Regulations from 30/05/2001 to 27/04/2006"@en ;
+    dct:description "This dataset contains data coming from the European Union's legal database EurLex. It includes all the Directives, Decisions aimed at Italy and Regulations issued during the XIV Italian Legislature."@en ;
+    prov:wasDerivedFrom <https://nicoleliggeri.github.io/IT_Parliament/EurLex_DDiR_1996-2019.json> ;
+    dct:modified "2024-02-01"^^xsd:date ;
+    dct:issued "2024-02-01"^^xsd:date ;
+
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/JUST> ;
+    dcat:keyword "Law"@en, "European Union"@en, "Legislature XIV of Italy"@en, "EU legislation"@en, "Italy"@en ;
+    dct:subject "Law"@en, "European Union"@en, "Legislature XIV of Italy"@en, "EU legislation"@en, "Italy"@en ;
+
+    dct:publisher "Leonardo Zilli" ;
+    dct:creator "Leonardo Zilli" ;
+    dcat:contactPoint "leonardo.zilli@studio.unibo.it" ;
+
+    dct:language <http://publications.europa.eu/resource/authority/language/ENG> ;
+    dct:source "The official EUR-Lex database: https://eur-lex.europa.eu/homepage.html" ;
+
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/NEVER> ;
+
+    dcat:landingPage <https://nicoleliggeri.github.io/IT_Parliament/> ;
+
+    dcat:startDate "2001-05-30"^^xsd:date ;
+    dcat:endDate "2006-04-27"^^xsd:date ;
+    dcat:distribution <https://github.com/NicoleLiggeri/IT_Parliament/blob/main/data/eu/EurLex_DDiR_1996-2019.zip> ;
+
+    dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcat:mediaType <http://www.iana.org/assignments/media-types/text/json> ;
+    dcat:downloadURL <https://github.com/NicoleLiggeri/IT_Parliament/raw/main/data/eu/EurLex_DDiR_1996-2019.zip> ;
+    dcat:byteSize "17.3 MB" ;
+
+    adms:status <http://purl.org/adms/status/Completed> ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> .
+
+
+<https://nicoleliggeri.github.io/IT_Parliament/EurLex_Leg15.json>  a dcat:Dataset, prov:Entity ;
+    dct:title "EurLex dataset of Directives, Decisions aimed at Italy and Regulations from 28/04/2006 to 28/04/2008"@en ;
+    dct:description "This dataset contains data coming from the European Union's legal database EurLex. It includes all the Directives, Decisions aimed at Italy and Regulations issued during the XV Italian Legislature."@en ;
+    prov:wasDerivedFrom <https://nicoleliggeri.github.io/IT_Parliament/EurLex_DDiR_1996-2019.json> ;
+    dct:modified "2024-02-01"^^xsd:date ;
+    dct:issued "2024-02-01"^^xsd:date ;
+
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/JUST> ;
+    dcat:keyword "Law"@en, "European Union"@en, "Legislature XV of Italy"@en, "EU legislation"@en, "Italy"@en ;
+    dct:subject "Law"@en, "European Union"@en, "Legislature XV of Italy"@en, "EU legislation"@en, "Italy"@en ;
+
+    dct:publisher "Leonardo Zilli" ;
+    dct:creator "Leonardo Zilli" ;
+    dcat:contactPoint "leonardo.zilli@studio.unibo.it" ;
+
+    dct:language <http://publications.europa.eu/resource/authority/language/ENG> ;
+    dct:source "The official EUR-Lex database: https://eur-lex.europa.eu/homepage.html" ;
+
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/NEVER> ;
+
+    dcat:landingPage <https://nicoleliggeri.github.io/IT_Parliament/> ;
+
+    dcat:startDate "2006-04-28"^^xsd:date ;
+    dcat:endDate "2008-04-28"^^xsd:date ;
+    dcat:distribution <https://github.com/NicoleLiggeri/IT_Parliament/blob/main/data/eu/EurLex_DDiR_1996-2019.zip> ;
+
+    dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcat:mediaType <http://www.iana.org/assignments/media-types/text/json> ;
+    dcat:downloadURL <https://github.com/NicoleLiggeri/IT_Parliament/raw/main/data/eu/EurLex_DDiR_1996-2019.zip> ;
+    dcat:byteSize "5.3 MB" ;
+
+    adms:status <http://purl.org/adms/status/Completed> ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> .
+
+
+<https://nicoleliggeri.github.io/IT_Parliament/EurLex_Leg16.json>  a dcat:Dataset, prov:Entity ;
+    dct:title "EurLex dataset of Directives, Decisions aimed at Italy and Regulations from 29/04/2008 to 14/03/2013"@en ;
+    dct:description "This dataset contains data coming from the European Union's legal database EurLex. It includes all the Directives, Decisions aimed at Italy and Regulations issued during the XVI Italian Legislature."@en ;
+    prov:wasDerivedFrom <https://nicoleliggeri.github.io/IT_Parliament/EurLex_DDiR_1996-2019.json> ;
+    dct:modified "2024-02-01"^^xsd:date ;
+    dct:issued "2024-02-01"^^xsd:date ;
+
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/JUST> ;
+    dcat:keyword "Law"@en, "European Union"@en, "Legislature XVI of Italy"@en, "EU legislation"@en, "Italy"@en ;
+    dct:subject "Law"@en, "European Union"@en, "Legislature XVI of Italy"@en, "EU legislation"@en, "Italy"@en ;
+
+    dct:publisher "Leonardo Zilli" ;
+    dct:creator "Leonardo Zilli" ;
+    dcat:contactPoint "leonardo.zilli@studio.unibo.it" ;
+
+    dct:language <http://publications.europa.eu/resource/authority/language/ENG> ;
+    dct:source "The official EUR-Lex database: https://eur-lex.europa.eu/homepage.html" ;
+
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/NEVER> ;
+
+    dcat:landingPage <https://nicoleliggeri.github.io/IT_Parliament/> ;
+
+    dcat:startDate "2008-04-29"^^xsd:date ;
+    dcat:endDate "2013-03-14"^^xsd:date ;
+    dcat:distribution <https://github.com/NicoleLiggeri/IT_Parliament/blob/main/data/eu/EurLex_DDiR_1996-2019.zip> ;
+
+    dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcat:mediaType <http://www.iana.org/assignments/media-types/text/json> ;
+    dcat:downloadURL <https://github.com/NicoleLiggeri/IT_Parliament/raw/main/data/eu/EurLex_DDiR_1996-2019.zip> ;
+    dcat:byteSize "11.2 MB" ;
+
+    adms:status <http://purl.org/adms/status/Completed> ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> .
+
+
+<https://nicoleliggeri.github.io/IT_Parliament/EurLex_Leg17.json>  a dcat:Dataset, prov:Entity ;
+    dct:title "EurLex dataset of Directives, Decisions aimed at Italy and Regulations from 15/03/2013 to 22/03/2018"@en ;
+    dct:description "This dataset contains data coming from the European Union's legal database EurLex. It includes all the Directives, Decisions aimed at Italy and Regulations issued during the XVII Italian Legislature."@en ;
+    prov:wasDerivedFrom <https://nicoleliggeri.github.io/IT_Parliament/EurLex_DDiR_1996-2019.json> ;
+    dct:modified "2024-02-01"^^xsd:date ;
+    dct:issued "2024-02-01"^^xsd:date ;
+
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/JUST> ;
+    dcat:keyword "Law"@en, "European Union"@en, "Legislature XVII of Italy"@en, "EU legislation"@en, "Italy"@en ;
+    dct:subject "Law"@en, "European Union"@en, "Legislature XVII of Italy"@en, "EU legislation"@en, "Italy"@en ;
+
+    dct:creator "Leonardo Zilli" ;
+    dcat:contactPoint "leonardo.zilli@studio.unibo.it" ;
+
+    dct:language <http://publications.europa.eu/resource/authority/language/ENG> ;
+    dct:source "The official EUR-Lex database: https://eur-lex.europa.eu/homepage.html" ;
+
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/NEVER> ;
+
+    dcat:landingPage <https://nicoleliggeri.github.io/IT_Parliament/> ;
+
+    dcat:startDate "2013-03-15"^^xsd:date ;
+    dcat:endDate "2018-03-22"^^xsd:date ;
+    dcat:distribution <https://github.com/NicoleLiggeri/IT_Parliament/blob/main/data/eu/EurLex_DDiR_1996-2019.zip> ;
+
+    dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcat:mediaType <http://www.iana.org/assignments/media-types/text/json> ;
+    dcat:downloadURL <https://github.com/NicoleLiggeri/IT_Parliament/raw/main/data/eu/EurLex_DDiR_1996-2019.zip> ;
+    dcat:byteSize "11.8 MB" ;
+
+    adms:status <http://purl.org/adms/status/Completed> ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> .
+
+
+<https://nicoleliggeri.github.io/IT_Parliament/EurLex_Leg18.json>  a dcat:Dataset, prov:Entity ;
+    dct:title "EurLex dataset of Directives, Decisions aimed at Italy and Regulations from 23/03/2018 to 12/10/2019"@en ;
+    dct:description "This dataset contains data coming from the European Union's legal database EurLex. It includes all the Directives, Decisions aimed at Italy and Regulations issued during the XVIII Italian Legislature."@en ;
+    prov:wasDerivedFrom <https://nicoleliggeri.github.io/IT_Parliament/EurLex_DDiR_1996-2019.json> ;
+    dct:modified "2024-02-01"^^xsd:date ;
+    dct:issued "2024-02-01"^^xsd:date ;
+
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/JUST> ;
+    dcat:keyword "Law"@en, "European Union"@en, "Legislature XVIII of Italy"@en, "EU legislation"@en, "Italy"@en ;
+    dct:subject "Law"@en, "European Union"@en, "Legislature XVIII of Italy"@en, "EU legislation"@en, "Italy"@en ;
+
+    dct:publisher "Leonardo Zilli" ;
+    dct:creator "Leonardo Zilli" ;
+    dcat:contactPoint "leonardo.zilli@studio.unibo.it" ;
+
+    dct:language <http://publications.europa.eu/resource/authority/language/ENG> ;
+    dct:source "The official EUR-Lex database: https://eur-lex.europa.eu/homepage.html" ;
+
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/NEVER> ;
+
+    dcat:landingPage <https://nicoleliggeri.github.io/IT_Parliament/> ;
+
+    dcat:startDate "2018-03-23"^^xsd:date ;
+    dcat:endDate "2019-10-12"^^xsd:date ;
+    dcat:distribution <https://github.com/NicoleLiggeri/IT_Parliament/blob/main/data/eu/EurLex_DDiR_1996-2019.zip> ;
+
+    dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcat:mediaType <http://www.iana.org/assignments/media-types/text/json> ;
+    dcat:downloadURL <https://github.com/NicoleLiggeri/IT_Parliament/raw/main/data/eu/EurLex_DDiR_1996-2019.zip> ;
+    dcat:byteSize "2.6 MB" ;
+
+    adms:status <http://purl.org/adms/status/Completed> ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> .
+
+
+<https://github.com/NicoleLiggeri/IT_Parliament/blob/main/data/eu/EurLex_DDiR_1996-2019.zip> a dcat:Distribution ;
+    dcat:downloadURL <https://github.com/NicoleLiggeri/IT_Parliament/blob/main/data/eu/EurLex_DDiR_1996-2019.zip> ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> .
+    dcat:mediaType <http://www.iana.org/assignments/media-types/text/json> ;
+    dcat:compressFormat <http://www.iana.org/assignments/media-types/application/gzip> .
