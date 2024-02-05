@@ -944,23 +944,17 @@
               <h2 class="analysis-title">Technical analysis</h2>
             </div>
             <h3 class="analysis-second-title">Source datasets</h3>
-             <p class="analysis-text">
-              The datasets we used in this project come from prestigious open-access databases. Publishing datasets as open data requires that the data be made available in formats that are:
-              </p>
-              <ul>
-               <li>open;</li> 
+            <p class="analysis-text">
+              The datasets we used in this project come from prestigious open-access databases. Publishing datasets as open data requires that the data be made available in formats that are:</p>
+            <ul>
+                <li>open;</li> 
                 <li>non-proprietary;</li>
                 <li>standardized;</li>
                 <li>neutral with respect to the applications needed to access the data.</li>
             </ul>
+            <br>
            
-            <p class="analysis-text">
-              All source dataset have been evaluated based on the
-              <span class="underlined--bg underlined--offset--bg">
-                <b><a href="https://docs.italia.it/italia/daf/lg-patrimonio-pubblico/it/stabile/modellometadati.html"
-                    target="_blank">metadata model</a> provided by AGID</b></span> that classifies metadata quality on a
-              range of 4 levels according to two factors: <i>data-metadata bond</i> and <i>detail level</i>
-            </p>
+            <h4 class="text-center">Senate and Teseo</h4>
             <p class="analysis-text">
               The reference databases of the Senate and Teseo have very weak metadata and do not surpass level one. Both the dataset from the European Parliament and our reprocessed datasets, on the other hand, reach level two of AGID. The data are accompanied by external metadata (e.g., included on the dataset download page or in separate files).
                </p>
@@ -973,9 +967,15 @@
                     target="_blank">website.</a></b></span>
                </p>
                <div class="text-center">
-                <img class="img-fluid" src="https://dati.senato.it/application/xmanager/projects/datisenato/img/ontologia-senato-repubblica-w800.png">
+                <img class="img-fluid" src="https://dati.senato.it/application/xmanager/projects/datisenato/img/ontologia-senato-repubblica-w800.png" style="max-width: 50vw;">
                </div>
             <br><br>
+            <h4 class="text-center">CEPS EurLex dataset</h4>
+            <p class="analysis-text">
+              From a technical point of view, the dataset is well-structured and well-documented. The dataset is available in both CSV format as well as Tubular Data to be visualized with software such as Microsoft Excel. The dataset is also conveniently offered both in a very large unique file, as well as in smaller ones divided categorically.
+            </p>
+            <p class="analysis-text">The researchers at CEPS also wrote a handy codebook summary for the dataset, which explains how the dataset was built and gives a detailed overview of all the variables available in it.</p>
+            <p class="analysis-text">The metadata are hosted on the same platform as the dataset files, the Dataverse portal of Harvard, and are offered in many different formats. None of them, however, are structured following the DCAT standards.</p>
             <!-- Tables for source datasets (as in Datasets section)-->           
             
             <h3 class="analysis-second-title">
@@ -983,90 +983,35 @@
             </h3>
 
             <p class="analysis-text">
-              All produced mashup dataset have been thoroughly described with metadata, following the specification
-              of <a href="https://docs.italia.it/italia/daf/linee-guida-cataloghi-dati-dcat-ap-it/it/stabile/index.html"
-                target="_blank"><b>DCAT-AP_IT</b></a> standard as recommended by <span
-                class="underlined--bg underlined--offset--bg"><b>AGID's public information heritage valorization
-                  guidelines</b></span>.<br><br>
-              Since all our datasets contain data of specific national interest and are derived from Istat datasets,
-              which is an italian public research institution we decided to adopt <b>DCAT-AP_IT</b> (2016), the national
-              standard. <br>Although it is based on the first version of the european standard DCAT and has more
-              constraints, compared to the more flexible and recent european standard <a
-                href="https://www.w3.org/TR/vocab-dcat-2/" target="_blank">DCAT-AP 2.0</a>, we considered
-              DCAT-AP_IT the more suitable standard for our mashuo datasets: on the one hand, because in the italian
-              public sector <span class="underlined--bg underlined--offset--bg"><b>an increasing number of Public
-                  Administrations are adopting DCAT-AP_IT</b></span>; on the other hand,
-              because this allowed us to follow more detailed national guidelines and therfore <span
-                class="underlined--bg underlined--offset--bg"><b>ensure interoperability
-                  and harmonization with other data on a national level</b></span>.
-                  <br><br>
-                  An OWL ontology serialized in RDF/XML has been defined and is available on dati.gov.it.
-            The ontology, in addition to being available for download in the native .owl format, can be visualized and navigated through the<a href="http://www.essepuntato.it/lode"
-            target="_blank"><b> open-source LODE (Live OWL Documentation Environment) </b></a> service both in Italian and English versions.
-            </p>
-            <img class="img-fluid"src="https://dati.gov.it/sites/default/files/2020-02/DCAT-AP_IT_UML.png">
-            <br><br>
-            <br><br>
+                        All produced mashup dataset have been thoroughly described with metadata, following the specification
+                        of <a href="https://op.europa.eu/en/web/eu-vocabularies/dcat-ap"
+                          target="_blank"><b>DCAT-AP</b></a> standard as recommended by <span
+                          class="underlined--bg underlined--offset--bg"></span><br>
+                            An OWL ontology serialized in RDF/XML has been defined and is available on dati.gov.it.
+                      The ontology, in addition to being available for download in the native .owl format, can be visualized and navigated through the<a href="http://www.essepuntato.it/lode"
+                      target="_blank"><b> open-source LODE (Live OWL Documentation Environment) </b></a> service both in Italian and English versions.
+                        </p>
             <p class="analysis-text">
-              We consulted the official thesaurus of the European Union, the <a
-              href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/eurovoc" target="_blank">EuroVoc</a>, to enable a clear and standardized definition of the keywords for our new datasets.
+              For the development of the metadata for the new datasets, we strived to adhere are closely as possible to the DCAT methodologies by always providing when possible the data coming from controlled vocabularies, such as the official thesaurus of the European Union, the <a
+              href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/eurovoc" target="_blank">EuroVoc</a>, to enable a clear and standardized definition of the metadata for our new datasets in order to provide <span class="underlined--bg underlined--offset--bg"><b>semantic interoperability</b></span> with other applications and datasets.
             </p>
-            <div class="row portfolio-container d-flex flex-row justify-content-center" data-aos="fade-up" data-aos-delay="300">
-              <div class="col-lg-3 col-md-4 portfolio-item source-dataset">
-                <div class="icon-box">
-                  <div class="dataset-title">
-                    <i class="bi bi-file-earmark"></i>
-                    <h3>Italian legislatures</h3>
-                  </div>
-                  <p>
-                    <b>Metadata</b>: <a href="https://github.com/NicoleLiggeri/IT-and-EU_Parliaments/blob/fe8e91963e50b557cbc5777859fb0f7d4b945126/DCAT-IT.ttl" target="_blank">provided</a><br>
-                    </p>
-                  <div class="license-label text-center"><img src="https://licensebuttons.net/l/by/4.0/88x31.png" title="Creative Commons CC BY 4.0 Universal Public Domain Dedication."></div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-4 portfolio-item source-dataset">
-                <div class="icon-box">
-                  <div class="dataset-title">
-                    <i class="bi bi-file-earmark"></i>
-                    <h3>Teseo hypernyms
-                    </h3>
-                  </div>
-                  <p>
-                    <b>Metadata</b>:<a hrer="https://github.com/NicoleLiggeri/IT-and-EU_Parliaments/blob/fe8e91963e50b557cbc5777859fb0f7d4b945126/DCAT-IT.ttl" target="_blank">provided</a><br>
-                   </p>
-                  <div class="license-label text-center"><img src="https://licensebuttons.net/l/by/4.0/88x31.png" title="Creative Commons CC BY 4.0 Universal Public Domain Dedication."></div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-4 portfolio-item source-dataset">
-                <div class="icon-box">
-                  <div class="dataset-title">
-                    <i class="bi bi-file-earmark"></i>
-                    <h3>EurLex_DDiR_1996-2019</h3>
-                  </div>
-                  <p>
-                    <b>Metadata</b>: <a href="https://raw.githubusercontent.com/NicoleLiggeri/IT_Parliament/main/data/eu/EurLex_DDiR_1996-2019.ttl" target="_blank">provided</a><br>
-                    </p>
-                  <div class="license-label text-center"><img src="https://licensebuttons.net/l/by/4.0/88x31.png" title="Creative Commons CC BY 4.0 Universal Public Domain Dedication."></div>
-                </div>
-              </div>
+            <div class="text-center">
+              <img class="img-fluid"src="https://dati.gov.it/sites/default/files/2020-02/DCAT-AP_IT_UML.png" style="max-width: 50vw;">
             </div>
+            <br>
+            <br>
             <br>
             
             <!-- FAIR principles -->
             <h3 class="analysis-second-title">FAIR principles</h3>
             <p class="analysis-text">
-              During the development of the project, we strived to adhere to the <a
-                href="https://www.go-fair.org/fair-principles/" target="_blank"><b>FAIR principles</b></a>, as published
-              by the <b>GO FAIR Initiative</b>.
+              Finally, we have compared the datasets against the set of guiding <a
+                href="https://www.go-fair.org/fair-principles/" target="_blank"><b>FAIR principles</b></a> proposed by the <b>GO FAIR Initiative</b>.
               <br>
               These recommendations are a <span class="underlined--bg underlined--offset--bg"><b>set of guiding
                   principles</b></span> proposed by a consortium of scientists and organizations to support the
-              <b>Findability</b>, <b>Accessibility</b>, <b>Interoperability</b>, <b>Reusability</b> of digital assets,
-              emphasizing, in particular, machine-actionability.
+              <b>Findability</b>, <b>Accessibility</b>, <b>Interoperability</b>, <b>Reusability</b> of digital assets.
             </p>
-            <p class="analysis-text">In the following table we have employed the overview of FAIR Principles provided by
-              GO Fair as a
-              checklist to thoroughly examine our project.</p>
             <!-- FAIR accordion -->
             <div class="accordion" id="accordionexample">
               <div class="accordion-item">

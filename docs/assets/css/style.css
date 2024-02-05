@@ -2271,3 +2271,7 @@ i.bi.bi-x {
 td, th {
   text-align: center;
 }
+
+.analysis-text {
+  padding: 0 4em 2em 2em;
+}
