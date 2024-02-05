@@ -152,6 +152,33 @@
             <p>For the Italian Parliament, we have decided to rely solely on the dataset of the Senate: cross-referencing with the datasets of the Chamber of Deputies, while possible, would have been made complex by the need to align the datasets - expecially to align the unique identifiers.</p>
 <p>The data collection was carried out through an API endpoint using a series of SPARQL queries.</p>
 <p>The queries mainly have this structure:</p>
+            div class="card" style="width: 60%; margin: auto;">
+              <div class="card-body">
+                <h5 class="card-title">SPARQL example</h5>
+                <p class="card-text">
+                <p class="card-text">
+                  PREFIX osr: <<a>http://dati.senato.it/osr/</a>><br>
+
+
+                  SELECT DISTINCT ?legislatura ?idddl ?dataStato ?teseo<br>
+                  {<br>
+                  
+                  ?ddl osr:dataStatoDdl ?dataStato; osr:idDdl ?idddl; osr:statoDdl ?stato; osr:legislatura ?legislatura;<br>
+                   osr:titolo ?titolo; osr:classificazione ?rif_teseo.<br>
+                  ?rif_teseo dcterms:subject ?steseo.<br>
+                  ?steseo skos:prefLabel ?teseo.<br>
+                  
+                  
+                  
+                  FILTER (REGEX(?stato,'approvato definitivamente','i')).<br>
+                  FILTER (?legislatura = 16).<br>
+                  FILTER (?dataStato > "2012-02-22"^^xsd:date)<br>
+                  
+                  
+                  }<br>
+                  ORDER BY ?legislatura ?dataStato ?idddl</p>
+              </div>
+            </div>
             <p>We then exported the datasets and used Python with CSV to refine the necessary data to obtain the respective visualizations.</p>
             <p>For the Teseo database, it was not possible to find a machine-readable database. For this reason, we manually extracted the data from the official website of the Senate to establish a direct relationship between each hyponym in Teseo (more than three thousand terms) and the most general hypernym possible (45 in total).</p>
             <p>For the data concerning the European Parliament, we chose to adapt an already made dataset coming from the Centre for <span class="underlined--bg underlined--offset--bg active--bg"><b>European Policy Studies (CEPS)</b></span> which has been extracted from the EurLex, the Official Journal of the European Union that hosts all of the texts and material related to Europe's legislative process.</p>
