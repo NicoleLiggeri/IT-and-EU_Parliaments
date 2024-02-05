@@ -335,6 +335,15 @@ function wordcloud() {
 function modifyAndHide(id) {
     $(id).toggle();
 }
+function showAll(){
+  $("#13-a").show(); 
+  $("#14-a").show(); 
+  $("#15-a").show(); 
+  $("#16-a").show(); 
+  $("#17-a").show(); 
+  $("#18-a").show(); 
+  $("#19-a").show(); 
+}
 
 $(document).ready(function() {
   wordcloud();
