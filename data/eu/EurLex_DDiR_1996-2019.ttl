@@ -10,9 +10,6 @@
     dct:description "Catalog containing the EurLex dataset from 1996 to 2019"@en ;
     dct:language <http://publications.europa.eu/resource/authority/language/ENG> ;
     dct:issued "2024-02-01"^^xsd:date ;
-    dcat:keyword "Law"@en, "European Union"@en, "Italian legislation"@en, "EU legislation"@en, "Italy"@en ;
-    dct:subject "Law"@en, "European Union"@en, "Italian legislation"@en, "EU legislation"@en, "Italy"@en ;
-    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/JUST> ;
     dcat:dataset <https://nicoleliggeri.github.io/IT-and-EU_Parliaments/EurLex_DDiR_1996-2019.json>,
                  <https://nicoleliggeri.github.io/IT-and-EU_Parliaments/EurLex_Leg13.json>,
                  <https://nicoleliggeri.github.io/IT-and-EU_Parliaments/EurLex_Leg14.json>,
@@ -32,6 +29,7 @@
     dcat:theme <http://publications.europa.eu/resource/authority/data-theme/JUST> ;
     dcat:keyword "Law"@en, "European Union"@en, "Italian legislation"@en, "EU legislation"@en, "Italy"@en ;
     dct:subject "Law"@en, "European Union"@en, "Italian legislation"@en, "EU legislation"@en, "Italy"@en ;
+    dct:spatial <http://publications.europa.eu/resource/authority/continent/EUROPE> ;
 
     dct:publisher "Leonardo Zilli" ;
     dct:creator "Leonardo Zilli" ;
@@ -54,7 +52,7 @@
 
     dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcat:mediaType <http://www.iana.org/assignments/media-types/text/json> ;
-    dcat:accessURL <https://github.com/NicoleLiggeri/IT-and-EU_Parliaments/raw/main/data/eu/EurLex_DDiR_1996-2019.zip> ;
+    dcat:accessURL <https://github.com/NicoleLiggeri/IT-and-EU_Parliaments/tree/main/data/eu> ;
     dcat:downloadURL <https://github.com/NicoleLiggeri/IT-and-EU_Parliaments/raw/main/data/eu/EurLex_DDiR_1996-2019.zip> ;
     dcat:byteSize "69517690"^^xsd:decimal ;
 
@@ -72,6 +70,7 @@
     dcat:theme <http://publications.europa.eu/resource/authority/data-theme/JUST> ;
     dcat:keyword "Law"@en, "European Union"@en, "Legislature XIII of Italy"@en, "EU legislation"@en, "Italy"@en ;
     dct:subject "Law"@en, "European Union"@en, "Legislature XIII of Italy"@en, "EU legislation"@en, "Italy"@en ;
+    dct:spatial <http://publications.europa.eu/resource/authority/continent/EUROPE> ;
 
     dct:publisher "Leonardo Zilli" ;
     dct:creator "Leonardo Zilli" ;
@@ -92,6 +91,7 @@
     dcat:distribution <https://github.com/NicoleLiggeri/IT-and-EU_Parliaments/blob/main/data/eu/EurLex_DDiR_1996-2019.zip> ;
 
     dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dct:spatial <http://publications.europa.eu/resource/authority/continent/EUROPE> ;
     dcat:mediaType <http://www.iana.org/assignments/media-types/text/json> ;
     dcat:accessURL <https://github.com/NicoleLiggeri/IT-and-EU_Parliaments/raw/main/data/eu/EurLex_DDiR_1996-2019.zip> ;
     dcat:byteSize "20194760"^^xsd:decimal ;
@@ -110,6 +110,7 @@
     dcat:theme <http://publications.europa.eu/resource/authority/data-theme/JUST> ;
     dcat:keyword "Law"@en, "European Union"@en, "Legislature XIV of Italy"@en, "EU legislation"@en, "Italy"@en ;
     dct:subject "Law"@en, "European Union"@en, "Legislature XIV of Italy"@en, "EU legislation"@en, "Italy"@en ;
+    dct:spatial <http://publications.europa.eu/resource/authority/continent/EUROPE> ;
 
     dct:publisher "Leonardo Zilli" ;
     dct:creator "Leonardo Zilli" ;
@@ -149,6 +150,7 @@
     dcat:theme <http://publications.europa.eu/resource/authority/data-theme/JUST> ;
     dcat:keyword "Law"@en, "European Union"@en, "Legislature XV of Italy"@en, "EU legislation"@en, "Italy"@en ;
     dct:subject "Law"@en, "European Union"@en, "Legislature XV of Italy"@en, "EU legislation"@en, "Italy"@en ;
+    dct:spatial <http://publications.europa.eu/resource/authority/continent/EUROPE> ;
 
     dct:publisher "Leonardo Zilli" ;
     dct:creator "Leonardo Zilli" ;
@@ -188,6 +190,7 @@
     dcat:theme <http://publications.europa.eu/resource/authority/data-theme/JUST> ;
     dcat:keyword "Law"@en, "European Union"@en, "Legislature XVI of Italy"@en, "EU legislation"@en, "Italy"@en ;
     dct:subject "Law"@en, "European Union"@en, "Legislature XVI of Italy"@en, "EU legislation"@en, "Italy"@en ;
+    dct:spatial <http://publications.europa.eu/resource/authority/continent/EUROPE> ;
 
     dct:publisher "Leonardo Zilli" ;
     dct:creator "Leonardo Zilli" ;
@@ -227,6 +230,7 @@
     dcat:theme <http://publications.europa.eu/resource/authority/data-theme/JUST> ;
     dcat:keyword "Law"@en, "European Union"@en, "Legislature XVII of Italy"@en, "EU legislation"@en, "Italy"@en ;
     dct:subject "Law"@en, "European Union"@en, "Legislature XVII of Italy"@en, "EU legislation"@en, "Italy"@en ;
+    dct:spatial <http://publications.europa.eu/resource/authority/continent/EUROPE> ;
 
     dct:creator "Leonardo Zilli" ;
     dcat:contactPoint "leonardo.zilli@studio.unibo.it" ;
@@ -266,6 +270,7 @@
     dcat:theme <http://publications.europa.eu/resource/authority/data-theme/JUST> ;
     dcat:keyword "Law"@en, "European Union"@en, "Legislature XVIII of Italy"@en, "EU legislation"@en, "Italy"@en ;
     dct:subject "Law"@en, "European Union"@en, "Legislature XVIII of Italy"@en, "EU legislation"@en, "Italy"@en ;
+    dct:spatial <http://publications.europa.eu/resource/authority/continent/EUROPE> ;
 
     dct:publisher "Leonardo Zilli" ;
     dct:creator "Leonardo Zilli" ;
@@ -296,7 +301,12 @@
 
 
 <https://github.com/NicoleLiggeri/IT-and-EU_Parliaments/blob/main/data/eu/EurLex_DDiR_1996-2019.zip> a dcat:Distribution ;
-    dcat:accessURL <https://github.com/NicoleLiggeri/IT-and-EU_Parliaments/blob/main/data/eu/EurLex_DDiR_1996-2019.zip> ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcat:accessURL <https://github.com/NicoleLiggeri/IT-and-EU_Parliaments/tree/main/data/eu> ;
+    dcat:downloadURL <https://github.com/NicoleLiggeri/IT-and-EU_Parliaments/raw/main/data/eu/EurLex_DDiR_1996-2019.zip> ;
+    dcat:byteSize "12809614"^^xsd:decimal ;
     dct:license <https://creativecommons.org/licenses/by/4.0/> .
     dcat:mediaType <http://www.iana.org/assignments/media-types/text/json> ;
     dcat:compressFormat <http://www.iana.org/assignments/media-types/application/gzip> .
+    dct:modified "2024-02-01"^^xsd:date ;
+    dct:issued "2024-02-01"^^xsd:date ;

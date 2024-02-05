@@ -32,12 +32,12 @@
 	
 <https://github.com/NicoleLiggeri>
 	a 						dcatapit:Agent , foaf:Agent ;
-	dct:identifier  		"r_liguri" ;
+	dct:identifier  		"n_liggeri" ;
 	foaf:name				"Nicole Liggeri" .
 
 <https://github.com/leonardozilli> 
 	a 						dcatapit:Agent , foaf:Agent ;
-	dct:identifier  		"r_liguri" ;
+	dct:identifier  		"l_zilli" ;
 	foaf:name				"Leonardo Zilli" .
 	
 <http://publications.europa.eu/resource/authority/data-theme>
@@ -52,33 +52,55 @@
 	a 						dcatapit:Dataset , dcat:Dataset ;
 	dct:title 				"Italian laws for legislation"@en;
 	dct:description "The dataset is the result of several SPARQL querys in the Open Data of the italian Senato. It contains the unique identifier for each bill, the status of the bill at different points in time, and the keywords of the bill. The keywords are based on the controlled and official vocabulary TESEO."@en;
-  dcat:theme  			<http://publications.europa.eu/resource/authority/data-theme/GOVE> ;
+	dcat:theme  			<http://publications.europa.eu/resource/authority/data-theme/GOVE> ;
 	dct:subject				<http://eurovoc.europa.eu/0421> , <http://eurovoc.europa.eu/0426>;
+	dct:spatial				<http://publications.europa.eu/resource/authority/4j8/geonom2023/IT> ;
+	dct:temporal [
+        a dct:PeriodOfTime ;
+        dcat:startDate "1996-05-09"^^xsd:date ;
+    ] ;
 	dcterms:issued "2024-02-04"^^xsd:date ;
 	dcat:keyword 			"Bills" , "Parliament" ;	
 	dct:rightsHolder 		<http://dati.gov.it> ;
 	dct:publisher 			<https://github.com/NicoleLiggeri>, <https://github.com/leonardozilli> ;
 	dct:creator 			<https://github.com/NicoleLiggeri>, <https://github.com/leonardozilli> ;
-	dcat:landindPage		 ;///link githubpage
+    dcat:accessURL 			<https://github.com/NicoleLiggeri/IT-and-EU_Parliaments/tree/main/Italian%20legislatures> ;
+	dcat:landingPage		<https://nicoleliggeri.github.io/IT-and-EU_Parliaments/> ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+    dcat:mediaType <http://www.iana.org/assignments/media-types/text/csv> ;
+    dct:license <https://creativecommons.org/licenses/by/3.0/> .
+    dcat:contactPoint "nicole.liggeri@studio.unibo.it" ;
+    dct:modified "2024-02-01"^^xsd:date ;
+    dct:issued "2024-02-01"^^xsd:date ;
 	
-<http://publications.europa.eu/resource/authority/data-theme/GOVE>
-	a 						skos:Concept ;
-	skos:prefLabel 			"Government and public sector"@eng.
-
 
 <https://github.com/NicoleLiggeri/IT-and-EU_Parliaments/blob/main/Teseo.csv>
 	a 						dcatapit:Dataset , dcat:Dataset ;
 	dct:title 				"Italian laws, Teseo"@en;
 	dct:description "The Teseo is a controlled vocabulary of terms used by the Italian parliament to label the macro areas of reference of each bill. Teseo is built as a hierarchy tree among terms: from the most general terms to the most specific ones. This dataset, in particular, is a processing of that tree. The aim is to create a direct alignment between hypernyms and hyponyms."@en;
-  dcat:theme  			<http://publications.europa.eu/resource/authority/data-theme/GOVE> ;
+	dcat:theme  			<http://publications.europa.eu/resource/authority/data-theme/GOVE> ;
 	dct:subject				<http://eurovoc.europa.eu/0421> , <http://eurovoc.europa.eu/0426>;
 	dcterms:issued "2024-02-04"^^xsd:date ;
 	dcat:keyword 			"Bills" , "Parliament", "Teseo", "Topics";	
 	dct:rightsHolder 		<http://dati.gov.it> ;
+	dct:spatial				<http://publications.europa.eu/resource/authority/4j8/geonom2023/IT> ;
 	dct:publisher 			<https://github.com/NicoleLiggeri>, <https://github.com/leonardozilli> ;
 	dct:creator 			<https://github.com/NicoleLiggeri>, <https://github.com/leonardozilli> ;
-	dcat:landindPage		 ;///link githubpage
+    dcat:accessURL 			<https://github.com/NicoleLiggeri/IT-and-EU_Parliaments/blob/main/Teseo.csv> ;
+	dcat:downloadURL 		<https://github.com/NicoleLiggeri/IT-and-EU_Parliaments/raw/main/Teseo.csv> ;
+	dcat:landingPage		<https://nicoleliggeri.github.io/IT-and-EU_Parliaments/> ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+    dcat:mediaType <http://www.iana.org/assignments/media-types/text/csv> ;
+    dct:license <https://creativecommons.org/licenses/by/3.0/> .
+    dcat:contactPoint "nicole.liggeri@studio.unibo.it" ;
+    dct:modified "2024-02-01"^^xsd:date ;
+    dct:issued "2024-02-01"^^xsd:date ;
+    dcat:byteSize "144000"^^xsd:decimal ;
 	
+
+<http://publications.europa.eu/resource/authority/data-theme/GOVE>
+	a 						skos:Concept ;
+	skos:prefLabel 			"Government and public sector"@eng.
 
 
 <http://creativecommons.org/licenses/by/3.0/it/>
