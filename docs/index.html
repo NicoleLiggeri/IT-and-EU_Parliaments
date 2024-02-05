@@ -131,7 +131,7 @@
               <li>presence of links to other data (Linked Open Data).</li>  
             </ul>
             <p>The data collection arises from the idea of ​​comparing the thematic differences among the laws passed by the Italian Parliament in order to identify the major legislative focus areas.The objective is to identify the areas of interest but also to make a temporal comparison: to identify the differences between the thematic attentions of the parliament over time and across legislatures.</p>
-<p>The datasets of the European Parliament serve as a counterbalance to those of the Italian Parliament and it define a framework for the Italian context. What was happening in Europe while Italy was passing certain laws?"</p>
+<p>The datasets of the European Parliament serve as a counterbalance to those of the Italian Parliament and it define a framework for the Italian context. <span class="underlined--bg underlined--offset--bg active--bg"><b>What was happening in Europe while Italy was passing certain laws?</b></span></p>
             <p>The result of our work is the creation of <span class="underlined--bg underlined--offset--bg active--bg"><b>new datasets</b></span>, which describe the legislative efforts of both the Italian Parliament and the European Parliament, and the creation of new information that can be interactively viewed on the project's website. </p>
            </div>
         </div>
@@ -149,9 +149,11 @@
 
         <div class="column content d-flex flex-column justify-content-center align-items-center" >
           <div class="col-lg-10" data-aos="fade-up" data-aos-delay="150">
-            <p>For the Italian Parliament, we selected datasets from the Chamber of Deputies (Camera) and the Senate separately, as well as integrated datasets. This approach allowed us to verify, through mutual comparison, the data coming from both branches of Parliament during the course of the work.</p>
-            <p>We primarily used SPARQL queries by querying the respective endpoints:</p>
-            <p>We then exported the datasets and used JavaScript with JSON and Python with CSV to refine the necessary data to obtain the respective visualizations.</p>
+            <p>For the Italian Parliament, we have decided to rely solely on the dataset of the Senate: cross-referencing with the datasets of the Chamber of Deputies, while possible, would have been made complex by the need to align the datasets - expecially to align the unique identifiers.</p>
+<p>The data collection was carried out through an API endpoint using a series of SPARQL queries.</p>
+<p>The queries mainly have this structure:</p>
+            <p>We then exported the datasets and used Python with CSV to refine the necessary data to obtain the respective visualizations.</p>
+            <p>For the Teseo database, it was not possible to find a machine-readable database. For this reason, we manually extracted the data from the official website of the Senate to establish a direct relationship between each hyponym in Teseo (more than three thousand terms) and the most general hypernym possible (45 in total).</p>
             <p>For the data concerning the European Parliament, we chose to adapt an already made dataset coming from the Centre for <span class="underlined--bg underlined--offset--bg active--bg"><b>European Policy Studies (CEPS)</b></span> which has been extracted from the EurLex, the Official Journal of the European Union that hosts all of the texts and material related to Europe's legislative process.</p>
           </div>
         </div>
