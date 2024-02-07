@@ -17,7 +17,7 @@
 <https://github.com/NicoleLiggeri/IT-and-EU_Parliaments>
 	a 						dcatapit:Catalog , dcat:Catalog ;
 	dct:title				"IT and EU parliaments"@eng ;
-	dct:description 		""@eng ;
+	dct:description 		"The catalog contains the data regarding Italian legislation. It contains the laws - in their various states - from the thirteenth to the nineteenth legislature, and the TESEO, which is the controlled vocabulary of labels added as keywords to each bill."@eng ;
 	dct:issued				"2024-02-04"^^xsd:date ;
 	dct:publisher  			<https://github.com/NicoleLiggeri>, <https://github.com/leonardozilli> ;
 	dct:language			<http://publications.europa.eu/resource/authority/language/ITA>,  <http://publications.europa.eu/resource/authority/language/ENG>;
